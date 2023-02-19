@@ -1,0 +1,7 @@
+version: "3.7"
+services:
+  font:
+    build: .
+    container_name: font
+    volumes:
+      - ./dist:/dist

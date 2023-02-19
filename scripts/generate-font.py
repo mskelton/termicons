@@ -14,7 +14,7 @@ font.fullname = font_name
 font.encoding = "UnicodeFull"
 font.em = 1024
 
-font.sfntRevision = None # Auto-set (refreshed) by fontforge
+font.sfntRevision = None  # Auto-set (refreshed) by fontforge
 font.version = version
 font.copyright = "Mark Skelton"
 
@@ -27,14 +27,20 @@ font.appendSFNTName(en, "Copyright", "Mark Skelton")
 glyph = font.createChar(32)
 glyph.width = 200
 
-def addIcon(offset: int, name: str):
+
+def add_icon(offset: int, file_path: str, name: str):
     glyph = font.createChar(start_codepoint + offset, name)
-    glyph.importOutlines(os.path.join("svgs", (name + ".svg")))
+    glyph.importOutlines(file_path)
     glyph.left_side_bearing = 0
     glyph.right_side_bearing = 0
 
+
+def get_name(file_path: str):
+    return "i_" + os.path.basename(file_path).replace(".svg", "").replace("-", "_")
+
+
 with open("icons.csv") as file:
     for icon in csv.reader(file):
-        addIcon(int(icon[0]), icon[1])
+        add_icon(int(icon[0]), icon[1], get_name(icon[1]))
 
-font.generate(os.path.join(output_dir, font_name + ".otf"))
+# font.generate(os.path.join(output_dir, font_name + ".otf"))

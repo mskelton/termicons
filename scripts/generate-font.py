@@ -82,7 +82,7 @@ with open("icons.csv") as file:
             break
 
         codepoint = start_codepoint +int(icon[0])
-        name = get_name(icon[1])
+        name = icon[2] if len(icon) > 2 else get_name(icon[1])
 
         add_icon(codepoint, icon[1], name)
         manifest["icons"].append({

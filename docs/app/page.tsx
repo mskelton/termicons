@@ -19,7 +19,7 @@ export default function Home() {
         onChange={(e) => setQuery(e.target.value)}
       />
 
-      <div className="grid grid-cols-[repeat(auto-fit,minmax(100px,1fr))]  gap-8 mt-12">
+      <div className="grid grid-cols-[repeat(auto-fill,minmax(100px,1fr))]  gap-8 mt-12">
         {filteredIcons.map((icon) => (
           <IconButton key={icon.name} icon={icon} />
         ))}

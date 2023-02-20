@@ -45,7 +45,6 @@ def calc_shift(left1, width1, left2, width2):
 
 
 def add_icon(offset: int, file_path: str, name: str):
-    print("Adding icon: " + name)
     glyph = font.createChar(start_codepoint + offset, name)
     glyph.importOutlines(file_path)
 

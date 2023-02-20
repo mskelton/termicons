@@ -1,6 +1,6 @@
 import React from "react"
 
-export function SearchInput(props: SearchInputProps) {
+export function SearchInput({ totalResults, ...props }: SearchInputProps) {
   return (
     <div>
       <label htmlFor="search" className="sr-only">
@@ -16,9 +16,15 @@ export function SearchInput(props: SearchInputProps) {
         placeholder="Search icons..."
         {...props}
       />
+
+      <p className="mt-4 text-slate-500">
+        Showing {totalResults} {totalResults === 1 ? "result" : "results"}
+      </p>
     </div>
   )
 }
 
 export interface SearchInputProps
-  extends React.InputHTMLAttributes<HTMLInputElement> {}
+  extends React.InputHTMLAttributes<HTMLInputElement> {
+  totalResults: number
+}

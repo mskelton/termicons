@@ -4,7 +4,7 @@ import fontforge
 
 version = "1.0.0"
 font_name = "devicons"
-start_codepoint = 0xEC00
+start_codepoint = 0xD000
 output_dir = "dist"
 
 font = fontforge.font()
@@ -36,7 +36,7 @@ def add_icon(offset: int, file_path: str, name: str):
 
 
 def get_name(file_path: str):
-    return "i_" + os.path.basename(file_path).replace(".svg", "").replace("-", "_")
+    return os.path.basename(file_path).replace(".svg", "").replace("_", "-")
 
 
 with open("icons.csv") as file:

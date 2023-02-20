@@ -191,8 +191,6 @@
 569,material-icons/icons/mathematica.svg
 570,material-icons/icons/matlab.svg
 571,material-icons/icons/maven.svg
-572,material-icons/icons/mdsvex.svg
-573,material-icons/icons/mdx.svg
 574,material-icons/icons/merlin.svg
 575,material-icons/icons/meson.svg
 576,material-icons/icons/minecraft.svg
@@ -262,7 +260,6 @@
 655,material-icons/icons/raml.svg
 656,material-icons/icons/razor.svg
 657,material-icons/icons/react.svg
-658,material-icons/icons/react_ts.svg
 659,material-icons/icons/readme.svg
 660,material-icons/icons/reason.svg
 661,material-icons/icons/red.svg
@@ -322,7 +319,6 @@
 718,material-icons/icons/svelte.svg
 719,material-icons/icons/svg.svg
 720,material-icons/icons/svgo.svg
-721,material-icons/icons/svgr.svg
 722,material-icons/icons/swc.svg
 723,material-icons/icons/swift.svg
 724,material-icons/icons/table.svg
@@ -332,9 +328,7 @@
 728,material-icons/icons/teal.svg
 729,material-icons/icons/template.svg
 730,material-icons/icons/terraform.svg
-731,material-icons/icons/test-js.svg
-732,material-icons/icons/test-jsx.svg
-733,material-icons/icons/test-ts.svg
+733,material-icons/icons/test-ts.svg,test
 734,material-icons/icons/tex.svg
 735,material-icons/icons/textlint.svg
 736,material-icons/icons/tilt.svg
@@ -379,7 +373,7 @@
 775,material-icons/icons/webpack.svg
 776,material-icons/icons/wepy.svg
 777,material-icons/icons/windicss.svg
-778,material-icons/icons/wolframlanguage.svg
+778,material-icons/icons/wolframlanguage.svg,wolfram
 779,material-icons/icons/word.svg
 780,material-icons/icons/xaml.svg
 781,material-icons/icons/xml.svg

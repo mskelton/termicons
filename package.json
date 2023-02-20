@@ -1,0 +1,10 @@
+{
+  "name": "devicons",
+  "scripts": {
+    "format": "prettier --write ."
+  },
+  "type": "module",
+  "devDependencies": {
+    "prettier": "^2.8.4"
+  }
+}

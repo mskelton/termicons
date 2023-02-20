@@ -1,4 +1,5 @@
 import os
+import json
 import csv
 import fontforge
 import psMat
@@ -30,6 +31,8 @@ glyph.width = 200
 
 font.autoWidth(0, 0, font.em)
 
+manifest = {"icons": []}
+
 
 def width_from_bb(bb):
     return bb[2] - bb[0]
@@ -44,8 +47,8 @@ def calc_shift(left1, width1, left2, width2):
     return width1 / 2 + left1 - width2 / 2 - left2
 
 
-def add_icon(offset: int, file_path: str, name: str):
-    glyph = font.createChar(start_codepoint + offset, name)
+def add_icon(codepoint: int, file_path: str, name: str):
+    glyph = font.createChar( codepoint, name)
     glyph.importOutlines(file_path)
 
     d_bb = [120, 0, 1000 - 120, 900]  # just some nice sizes
@@ -78,6 +81,18 @@ with open("icons.csv") as file:
             print("Found blank line, exiting.")
             break
 
-        add_icon(int(icon[0]), icon[1], get_name(icon[1]))
+        codepoint = start_codepoint +int(icon[0])
+        name = get_name(icon[1])
+
+        add_icon(codepoint, icon[1], name)
+        manifest["icons"].append({
+            "name": name,
+            "codepoint": codepoint,
+        })
 
 font.generate(os.path.join(output_dir, font_name + ".otf"))
+font.generate(os.path.join(output_dir, font_name + ".woff"))
+font.generate(os.path.join(output_dir, font_name + ".woff2"))
+
+with open(os.path.join(output_dir, "manifest.json"), "w") as file:
+    json.dump(manifest, file)

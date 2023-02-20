@@ -1,2 +1,10 @@
+node_modules/
+
+# Font output
 dist/*
 !dist/.gitkeep
+
+# Next.js
+.next/
+out/
+build/

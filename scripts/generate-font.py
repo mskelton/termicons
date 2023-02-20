@@ -41,6 +41,10 @@ def get_name(file_path: str):
 
 with open("icons.csv") as file:
     for icon in csv.reader(file):
+        if not icon:
+            print("Found blank line, exiting.")
+            break
+
         add_icon(int(icon[0]), icon[1], get_name(icon[1]))
 
-# font.generate(os.path.join(output_dir, font_name + ".otf"))
+font.generate(os.path.join(output_dir, font_name + ".otf"))

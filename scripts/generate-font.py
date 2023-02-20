@@ -1,6 +1,7 @@
 import os
 import csv
 import fontforge
+import psMat
 
 version = "1.0.0"
 font_name = "devicons"
@@ -27,12 +28,45 @@ font.appendSFNTName(en, "Copyright", "Mark Skelton")
 glyph = font.createChar(32)
 glyph.width = 200
 
+font.autoWidth(0, 0, font.em)
+
+
+def width_from_bb(bb):
+    return bb[2] - bb[0]
+
+
+def height_from_bb(bb):
+    return bb[3] - bb[1]
+
+
+def calc_shift(left1, width1, left2, width2):
+    """Calculate shift needed to center '2' in '1'"""
+    return width1 / 2 + left1 - width2 / 2 - left2
+
 
 def add_icon(offset: int, file_path: str, name: str):
+    print("Adding icon: " + name)
     glyph = font.createChar(start_codepoint + offset, name)
     glyph.importOutlines(file_path)
-    glyph.left_side_bearing = 0
-    glyph.right_side_bearing = 0
+
+    d_bb = [120, 0, 1000 - 120, 900]  # just some nice sizes
+    g_bb = glyph.boundingBox()
+
+    scale_x = width_from_bb(d_bb) / width_from_bb(g_bb)
+    scale_y = height_from_bb(d_bb) / height_from_bb(g_bb)
+    scale = scale_y if scale_y < scale_x else scale_x
+    glyph.transform(psMat.scale(scale, scale))
+
+    g_bb = glyph.boundingBox()  # re-get after scaling (rounding errors)
+    glyph.transform(
+        psMat.translate(
+            calc_shift(d_bb[0], width_from_bb(d_bb), g_bb[0], width_from_bb(g_bb)),
+            calc_shift(d_bb[1], height_from_bb(d_bb), g_bb[1], height_from_bb(g_bb)),
+        )
+    )
+
+    glyph.width = int(d_bb[2] + d_bb[0])
+    glyph.manualHints = True
 
 
 def get_name(file_path: str):

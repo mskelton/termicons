@@ -1,6 +1,8 @@
 const manifest = require("./package.json")
+const manifest = require("fantasticon")
 const codepoints = require("./src/template/mapping.json")
 
+/** @type import('fantasticon').RunnerOptions */
 module.exports = {
   name: "termicons",
   prefix: "termicon",
@@ -10,6 +12,7 @@ module.exports = {
   fontTypes: ["ttf", "woff", "woff2"],
   assetTypes: ["json", "html"],
   normalize: true,
+  // descent: 55,
   templates: {
     html: "src/template/preview.hbs",
   },

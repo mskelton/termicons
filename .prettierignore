@@ -1,3 +1,4 @@
 dist/*
 !dist/termicons.js
+material-icons/
 pnpm-lock.yaml

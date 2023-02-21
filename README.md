@@ -4,8 +4,9 @@ Material style icons optimized for terminal rendering
 
 ## Installation
 
-Download the latest release of the font from the
-[releases page](https://github.com/mskelton/termicons/releases).
+Download the latest release of the font
+[here](https://mskelton.github.io/termicons/termicons.ttf) and install using
+your system font manager.
 
 ### Kitty
 

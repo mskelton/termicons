@@ -1,6 +1,7 @@
-let icons = document.querySelectorAll(".icon")
-let notification = document.getElementById("notification")
-let notificationText = document.getElementById("notification-text")
+const search = document.getElementById("search")
+const icons = document.querySelectorAll(".icon")
+const notification = document.getElementById("notification")
+const notificationText = document.getElementById("notification-text")
 let timer
 
 for (const icon of icons) {
@@ -9,6 +10,7 @@ for (const icon of icons) {
 
     navigator.clipboard.writeText(String.fromCodePoint(codepoint))
     notificationText.innerText = name
+    search.focus()
 
     animate()
   })
@@ -25,7 +27,7 @@ function animate() {
   }, 3000)
 }
 
-document.getElementById("search").addEventListener("keyup", (e) => {
+search.addEventListener("keyup", (e) => {
   const query = e.target.value.toLowerCase()
 
   for (const icon of icons) {

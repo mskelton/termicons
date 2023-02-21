@@ -3,6 +3,7 @@ node_modules/
 # Font output
 dist/*
 !dist/.gitkeep
+!dist/favicon.svg
 !dist/termicons.js
 
 # Next.js

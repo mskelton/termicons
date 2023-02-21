@@ -1,5 +1,4 @@
 const manifest = require("./package.json")
-const manifest = require("fantasticon")
 const codepoints = require("./src/template/mapping.json")
 
 /** @type import('fantasticon').RunnerOptions */

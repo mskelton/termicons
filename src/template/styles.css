@@ -1,7 +1,8 @@
 @font-face {
-  font-family: "devicons";
-  src: url("devicons.woff2") format("woff2"),
-    url("devicons.woff") format("woff"), url("devicons.ttf") format("truetype");
+  font-family: "termicons";
+  src: url("termicons.woff2") format("woff2"),
+    url("termicons.woff") format("woff"),
+    url("termicons.ttf") format("truetype");
 }
 
 @tailwind base;

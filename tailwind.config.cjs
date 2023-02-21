@@ -1,6 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["./src/**/*.hbs"],
+  content: ["./src/**/*.hbs", "./dist/termicons.js"],
   theme: {
     extend: {},
   },

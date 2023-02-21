@@ -1,11 +1,11 @@
 {
-  "name": "devicons",
+  "name": "termicons",
   "description": "Material style icons built for terminal rendering",
   "fontVersion": "1.0",
   "type": "module",
   "scripts": {
     "build": "fantasticon -c ./fantasticon.config.cjs",
-    "css": "tailwindcss -i ./src/template/styles.css -o ./dist/devicons.css",
+    "css": "tailwindcss -i ./src/template/styles.css -o ./dist/termicons.css",
     "format": "prettier --write ."
   },
   "dependencies": {

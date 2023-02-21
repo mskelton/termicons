@@ -2,8 +2,8 @@ const manifest = require("./package.json")
 const codepoints = require("./src/template/mapping.json")
 
 module.exports = {
-  name: "devicons",
-  prefix: "devicon",
+  name: "termicons",
+  prefix: "termicon",
   codepoints: codepoints,
   inputDir: "./src/icons",
   outputDir: "./dist",

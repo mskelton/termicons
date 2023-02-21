@@ -3,6 +3,7 @@
     <meta charset="UTF-8" />
     <title>{{name}}</title>
     <link rel="stylesheet" type="text/css" href="{{name}}.css" />
+    <script defer src="termicons.js"></script>
   </head>
 
   <body>
@@ -41,9 +42,11 @@
       >
         {{#each assets}}
           <button
-            class="flex flex-col text-slate-600 text-center justify-center items-center gap-2 hover:bg-slate-100 rounded-lg w-24 h-24 active:bg-slate-200 focus:border-indigo-500 focus:ring-indigo-500"
+            data-name="{{@key}}"
+            data-codepoint="{{lookup ../codepoints this.id}}"
+            class="icon flex flex-col text-slate-600 text-center justify-center items-center gap-2 hover:bg-slate-100 rounded-lg w-24 h-24 active:bg-slate-200 focus:border-indigo-500 focus:ring-indigo-500"
           >
-            <span class="font-['devicons'] text-6xl">
+            <span class="font-['termicons'] text-6xl">
               &#{{lookup ../codepoints this.id}};
             </span>
 
@@ -100,9 +103,12 @@
       </div>
     </footer>
 
-    <div id="notification">
+    <div
+      class="fixed mx-auto bottom-10 left-1/2 w-auto text-slate-50 opacity-0 bg-slate-900 py-2 px-6 rounded-lg transition-opacity shadow translate-x-['-50%']"
+      id="notification"
+    >
       📋 Copied:
-      <span id="notification-id"></span>
+      <span id="notification-text"></span>
     </div>
   </body>
 </html>

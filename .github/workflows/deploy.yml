@@ -1,14 +1,14 @@
 name: Deploy
 on:
   push:
-    branches: ["main"]
+    branches: [main]
   workflow_dispatch:
 permissions:
   contents: read
   pages: write
   id-token: write
 concurrency:
-  group: "pages"
+  group: pages
   cancel-in-progress: true
 jobs:
   deploy:
@@ -17,9 +17,13 @@ jobs:
       url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
+      - uses: mskelton/setup-pnpm@v1
       - name: Setup Pages
         uses: actions/configure-pages@v3
+      - name: Build font
+        run: pnpm build
+      - name: Generate CSS
+        run: pnpm css
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v1
         with:

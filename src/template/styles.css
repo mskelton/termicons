@@ -1,0 +1,9 @@
+@font-face {
+  font-family: "devicons";
+  src: url("devicons.woff2") format("woff2"),
+    url("devicons.woff") format("woff"), url("devicons.ttf") format("truetype");
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;

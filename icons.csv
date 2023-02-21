@@ -1,384 +1,384 @@
-001,material-icons/icons/3d.svg
-002,material-icons/icons/abc.svg
-003,material-icons/icons/actionscript.svg
-004,material-icons/icons/ada.svg
-005,material-icons/icons/adonis.svg
-006,material-icons/icons/advpl_include.svg,advpl
-010,material-icons/icons/android.svg
-017,material-icons/icons/angular.svg
-018,material-icons/icons/antlr.svg
-019,material-icons/icons/apiblueprint.svg
-020,material-icons/icons/apollo.svg
-021,material-icons/icons/applescript.svg
-022,material-icons/icons/appveyor.svg
-023,material-icons/icons/architecture.svg
-024,material-icons/icons/arduino.svg
-025,material-icons/icons/asciidoc.svg
-026,material-icons/icons/assembly.svg
-027,material-icons/icons/astro.svg
-028,material-icons/icons/astyle.svg
-029,material-icons/icons/audio.svg
-030,material-icons/icons/aurelia.svg
-031,material-icons/icons/authors.svg
-032,material-icons/icons/auto.svg
-033,material-icons/icons/autohotkey.svg
-034,material-icons/icons/autoit.svg
-035,material-icons/icons/azure-pipelines.svg
-036,material-icons/icons/azure.svg
-037,material-icons/icons/babel.svg
-038,material-icons/icons/ballerina.svg
-039,material-icons/icons/bazel.svg
-040,material-icons/icons/bicep.svg
-041,material-icons/icons/bitbucket.svg
-042,material-icons/icons/bithound.svg
-043,material-icons/icons/blink.svg
-044,material-icons/icons/blitz.svg
-045,material-icons/icons/bower.svg
-046,material-icons/icons/brainfuck.svg
-047,material-icons/icons/browserlist.svg
-048,material-icons/icons/buck.svg
-049,material-icons/icons/bucklescript.svg
-050,material-icons/icons/buildkite.svg
-051,material-icons/icons/c.svg
-052,material-icons/icons/cabal.svg
-053,material-icons/icons/caddy.svg
-054,material-icons/icons/cadence.svg
-055,material-icons/icons/cake.svg
-056,material-icons/icons/capacitor.svg
-057,material-icons/icons/certificate.svg
-058,material-icons/icons/changelog.svg
-059,material-icons/icons/chess.svg
-060,material-icons/icons/circleci.svg
-061,material-icons/icons/clojure.svg
-062,material-icons/icons/cloudfoundry.svg
-063,material-icons/icons/cmake.svg
-064,material-icons/icons/coala.svg
-065,material-icons/icons/cobol.svg
-066,material-icons/icons/coconut.svg
-067,material-icons/icons/code-climate.svg
-068,material-icons/icons/codecov.svg
-069,material-icons/icons/codeowners.svg
-070,material-icons/icons/coffee.svg
-071,material-icons/icons/coldfusion.svg
-072,material-icons/icons/command.svg
-073,material-icons/icons/commitlint.svg
-074,material-icons/icons/conduct.svg
-075,material-icons/icons/console.svg
-076,material-icons/icons/contributing.svg
-077,material-icons/icons/cpp.svg
-078,material-icons/icons/craco.svg
-079,material-icons/icons/credits.svg
-080,material-icons/icons/crystal.svg
-081,material-icons/icons/csharp.svg
-082,material-icons/icons/css-map.svg
-083,material-icons/icons/css.svg
-084,material-icons/icons/cucumber.svg
-085,material-icons/icons/cuda.svg
-086,material-icons/icons/cypress.svg
-087,material-icons/icons/d.svg
-088,material-icons/icons/dart.svg
-090,material-icons/icons/database.svg
-091,material-icons/icons/dependabot.svg
-092,material-icons/icons/dhall.svg
-093,material-icons/icons/diff.svg
-094,material-icons/icons/dinophp.svg
-095,material-icons/icons/disc.svg
-096,material-icons/icons/django.svg
-097,material-icons/icons/docker.svg
-098,material-icons/icons/document.svg
-099,material-icons/icons/dotjs.svg
-100,material-icons/icons/drawio.svg
-101,material-icons/icons/drone.svg
-102,material-icons/icons/dune.svg
-103,material-icons/icons/edge.svg
-104,material-icons/icons/editorconfig.svg
-105,material-icons/icons/ejs.svg
-106,material-icons/icons/elixir.svg
-107,material-icons/icons/elm.svg
-108,material-icons/icons/email.svg
-109,material-icons/icons/ember.svg
-110,material-icons/icons/erlang.svg
-111,material-icons/icons/eslint.svg
-112,material-icons/icons/exe.svg
-113,material-icons/icons/fastlane.svg
-114,material-icons/icons/favicon.svg
-115,material-icons/icons/figma.svg
-116,material-icons/icons/file.svg
-117,material-icons/icons/firebase.svg
-118,material-icons/icons/flash.svg
-119,material-icons/icons/flow.svg
-486,material-icons/icons/font.svg
-487,material-icons/icons/forth.svg
-488,material-icons/icons/fortran.svg
-489,material-icons/icons/foxpro.svg
-490,material-icons/icons/fsharp.svg
-491,material-icons/icons/fusebox.svg
-492,material-icons/icons/gatsby.svg
-493,material-icons/icons/gcp.svg
-494,material-icons/icons/gemfile.svg
-495,material-icons/icons/gemini.svg
-496,material-icons/icons/git.svg
-497,material-icons/icons/gitlab.svg
-498,material-icons/icons/gitpod.svg
-499,material-icons/icons/gleam.svg
-501,material-icons/icons/go.svg
-502,material-icons/icons/go_gopher.svg
-504,material-icons/icons/godot.svg
-505,material-icons/icons/gradle.svg
-506,material-icons/icons/grain.svg
-507,material-icons/icons/graphcool.svg
-508,material-icons/icons/graphql.svg
-509,material-icons/icons/gridsome.svg
-510,material-icons/icons/groovy.svg
-511,material-icons/icons/grunt.svg
-512,material-icons/icons/gulp.svg
-513,material-icons/icons/h.svg
-514,material-icons/icons/hack.svg
-515,material-icons/icons/haml.svg
-516,material-icons/icons/handlebars.svg
-517,material-icons/icons/hardhat.svg
-518,material-icons/icons/haskell.svg
-519,material-icons/icons/haxe.svg
-520,material-icons/icons/hcl.svg
-521,material-icons/icons/helm.svg
-522,material-icons/icons/heroku.svg
-523,material-icons/icons/hex.svg
-524,material-icons/icons/horusec.svg
-525,material-icons/icons/hpp.svg
-526,material-icons/icons/html.svg
-527,material-icons/icons/http.svg
-528,material-icons/icons/husky.svg
-529,material-icons/icons/i18n.svg
-530,material-icons/icons/idris.svg
-531,material-icons/icons/image.svg
-532,material-icons/icons/imba.svg
-533,material-icons/icons/ionic.svg
-534,material-icons/icons/istanbul.svg
-535,material-icons/icons/jar.svg
-536,material-icons/icons/java.svg
-537,material-icons/icons/javaclass.svg
-538,material-icons/icons/javascript-map.svg
-539,material-icons/icons/javascript.svg
-540,material-icons/icons/jenkins.svg
-541,material-icons/icons/jest.svg
-542,material-icons/icons/jinja.svg
-543,material-icons/icons/jsconfig.svg
-544,material-icons/icons/json.svg
-545,material-icons/icons/julia.svg
-546,material-icons/icons/jupyter.svg
-547,material-icons/icons/karma.svg
-548,material-icons/icons/key.svg
-549,material-icons/icons/kivy.svg
-550,material-icons/icons/kl.svg
-551,material-icons/icons/kotlin.svg
-552,material-icons/icons/kusto.svg
-553,material-icons/icons/laravel.svg
-554,material-icons/icons/lerna.svg
-555,material-icons/icons/less.svg
-556,material-icons/icons/lib.svg
-557,material-icons/icons/lighthouse.svg
-558,material-icons/icons/lilypond.svg
-559,material-icons/icons/liquid.svg
-560,material-icons/icons/lisp.svg
-561,material-icons/icons/livescript.svg
-562,material-icons/icons/lock.svg
-563,material-icons/icons/log.svg
-564,material-icons/icons/lolcode.svg
-565,material-icons/icons/lua.svg
-566,material-icons/icons/makefile.svg
-567,material-icons/icons/markdown.svg
-568,material-icons/icons/markojs.svg
-569,material-icons/icons/mathematica.svg
-570,material-icons/icons/matlab.svg
-571,material-icons/icons/maven.svg
-574,material-icons/icons/merlin.svg
-575,material-icons/icons/meson.svg
-576,material-icons/icons/minecraft.svg
-577,material-icons/icons/mint.svg
-578,material-icons/icons/mjml.svg
-579,material-icons/icons/mocha.svg
-580,material-icons/icons/modernizr.svg
-581,material-icons/icons/moonscript.svg
-582,material-icons/icons/mxml.svg
-583,material-icons/icons/nano-staged.svg
-584,material-icons/icons/ndst.svg
-595,material-icons/icons/nest.svg
-596,material-icons/icons/netlify.svg
-597,material-icons/icons/next.svg
-598,material-icons/icons/nginx.svg
-604,material-icons/icons/ngrx-state.svg,ngrx
-605,material-icons/icons/nim.svg
-606,material-icons/icons/nix.svg
-607,material-icons/icons/nodejs.svg
-608,material-icons/icons/nodejs_alt.svg
-609,material-icons/icons/nodemon.svg
-610,material-icons/icons/npm.svg
-611,material-icons/icons/nrwl.svg
-612,material-icons/icons/nuget.svg
-613,material-icons/icons/nunjucks.svg
-614,material-icons/icons/nuxt.svg
-615,material-icons/icons/ocaml.svg
-616,material-icons/icons/odin.svg
-617,material-icons/icons/opa.svg
-618,material-icons/icons/opam.svg
-619,material-icons/icons/otne.svg
-620,material-icons/icons/parcel.svg
-621,material-icons/icons/pawn.svg
-622,material-icons/icons/pdf.svg
-623,material-icons/icons/percy.svg
-624,material-icons/icons/perl.svg
-625,material-icons/icons/php-cs-fixer.svg
-626,material-icons/icons/php.svg
-627,material-icons/icons/php_elephant.svg
-628,material-icons/icons/php_elephant_pink.svg
-629,material-icons/icons/phpunit.svg
-630,material-icons/icons/pinejs.svg
-631,material-icons/icons/pipeline.svg
-632,material-icons/icons/playwright.svg
-633,material-icons/icons/plop.svg
-634,material-icons/icons/pnpm.svg
-635,material-icons/icons/poetry.svg
-636,material-icons/icons/postcss.svg
-637,material-icons/icons/posthtml.svg
-638,material-icons/icons/powerpoint.svg
-639,material-icons/icons/powershell.svg
-640,material-icons/icons/prettier.svg
-641,material-icons/icons/prisma.svg
-642,material-icons/icons/processing.svg
-643,material-icons/icons/prolog.svg
-644,material-icons/icons/proto.svg
-645,material-icons/icons/protractor.svg
-646,material-icons/icons/pug.svg
-647,material-icons/icons/puppet.svg
-648,material-icons/icons/purescript.svg
-649,material-icons/icons/python-misc.svg
-650,material-icons/icons/python.svg
-651,material-icons/icons/qsharp.svg
-652,material-icons/icons/quasar.svg
-653,material-icons/icons/r.svg
-654,material-icons/icons/racket.svg
-655,material-icons/icons/raml.svg
-656,material-icons/icons/razor.svg
-657,material-icons/icons/react.svg
-659,material-icons/icons/readme.svg
-660,material-icons/icons/reason.svg
-661,material-icons/icons/red.svg
-665,material-icons/icons/redux-store.svg,redux
-666,material-icons/icons/remix.svg
-667,material-icons/icons/renovate.svg
-668,material-icons/icons/replit.svg
-669,material-icons/icons/rescript-interface.svg
-670,material-icons/icons/rescript.svg
-671,material-icons/icons/restql.svg
-672,material-icons/icons/riot.svg
-673,material-icons/icons/roadmap.svg
-674,material-icons/icons/robot.svg
-675,material-icons/icons/robots.svg
-676,material-icons/icons/rollup.svg
-677,material-icons/icons/rome.svg
-678,material-icons/icons/routing.svg
-679,material-icons/icons/rubocop.svg
-680,material-icons/icons/ruby.svg
-681,material-icons/icons/rust.svg
-682,material-icons/icons/salesforce.svg
-683,material-icons/icons/san.svg
-684,material-icons/icons/sas.svg
-685,material-icons/icons/sass.svg
-686,material-icons/icons/sbt.svg
-687,material-icons/icons/scala.svg
-688,material-icons/icons/scheme.svg
-689,material-icons/icons/search.svg
-690,material-icons/icons/semantic-release.svg
-691,material-icons/icons/sentry.svg
-692,material-icons/icons/sequelize.svg
-693,material-icons/icons/serverless.svg
-694,material-icons/icons/settings.svg
-695,material-icons/icons/shader.svg
-696,material-icons/icons/shaderlab.svg
-697,material-icons/icons/silverstripe.svg
-698,material-icons/icons/siyuan.svg
-699,material-icons/icons/sketch.svg
-700,material-icons/icons/slim.svg
-701,material-icons/icons/slug.svg
-702,material-icons/icons/smarty.svg
-703,material-icons/icons/sml.svg
-704,material-icons/icons/snowpack.svg
-705,material-icons/icons/snyk.svg
-706,material-icons/icons/solidity.svg
-707,material-icons/icons/sonarcloud.svg
-708,material-icons/icons/steadybit.svg
-709,material-icons/icons/stencil.svg
-710,material-icons/icons/stitches.svg
-711,material-icons/icons/storybook.svg
-712,material-icons/icons/stryker.svg
-713,material-icons/icons/stylable.svg
-714,material-icons/icons/stylelint.svg
-715,material-icons/icons/stylus.svg
-716,material-icons/icons/sublime.svg
-717,material-icons/icons/supabase.svg
-718,material-icons/icons/svelte.svg
-719,material-icons/icons/svg.svg
-720,material-icons/icons/svgo.svg
-722,material-icons/icons/swc.svg
-723,material-icons/icons/swift.svg
-724,material-icons/icons/table.svg
-725,material-icons/icons/tailwindcss.svg
-726,material-icons/icons/tauri.svg
-727,material-icons/icons/tcl.svg
-728,material-icons/icons/teal.svg
-729,material-icons/icons/template.svg
-730,material-icons/icons/terraform.svg
-733,material-icons/icons/test-ts.svg,test
-734,material-icons/icons/tex.svg
-735,material-icons/icons/textlint.svg
-736,material-icons/icons/tilt.svg
-737,material-icons/icons/tldraw.svg
-738,material-icons/icons/tobi.svg
-739,material-icons/icons/tobimake.svg
-740,material-icons/icons/todo.svg
-741,material-icons/icons/travis.svg
-742,material-icons/icons/tree.svg
-743,material-icons/icons/tsconfig.svg
-744,material-icons/icons/tune.svg
-745,material-icons/icons/turborepo.svg
-746,material-icons/icons/twig.svg
-747,material-icons/icons/twine.svg
-748,material-icons/icons/typescript-def.svg
-749,material-icons/icons/typescript.svg
-750,material-icons/icons/uml.svg
-751,material-icons/icons/url.svg
-752,material-icons/icons/vagrant.svg
-753,material-icons/icons/vala.svg
-754,material-icons/icons/velocity.svg
-755,material-icons/icons/vercel.svg
-756,material-icons/icons/verdaccio.svg
-757,material-icons/icons/verilog.svg
-758,material-icons/icons/vfl.svg
-759,material-icons/icons/video.svg
-760,material-icons/icons/vim.svg
-761,material-icons/icons/virtual.svg
-762,material-icons/icons/visualstudio.svg
-763,material-icons/icons/vite.svg
-764,material-icons/icons/vitest.svg
-765,material-icons/icons/vlang.svg
-766,material-icons/icons/vscode.svg
-767,material-icons/icons/vue-config.svg
-768,material-icons/icons/vue.svg
-769,material-icons/icons/vuex-store.svg
-770,material-icons/icons/wakatime.svg
-771,material-icons/icons/wallaby.svg
-772,material-icons/icons/watchman.svg
-773,material-icons/icons/webassembly.svg
-774,material-icons/icons/webhint.svg
-775,material-icons/icons/webpack.svg
-776,material-icons/icons/wepy.svg
-777,material-icons/icons/windicss.svg
-778,material-icons/icons/wolframlanguage.svg,wolfram
-779,material-icons/icons/word.svg
-780,material-icons/icons/xaml.svg
-781,material-icons/icons/xml.svg
-782,material-icons/icons/yaml.svg
-783,material-icons/icons/yang.svg
-784,material-icons/icons/yarn.svg
-785,material-icons/icons/zig.svg
-786,material-icons/icons/zip.svg
+1	3d.svg
+2	abc.svg
+3	actionscript.svg
+4	ada.svg
+5	adonis.svg
+6	advpl_include.svg
+10	android.svg
+17	angular.svg
+18	antlr.svg
+19	apiblueprint.svg
+20	apollo.svg
+21	applescript.svg
+22	appveyor.svg
+23	architecture.svg
+24	arduino.svg
+25	asciidoc.svg
+26	assembly.svg
+27	astro.svg
+28	astyle.svg
+29	audio.svg
+30	aurelia.svg
+31	authors.svg
+32	auto.svg
+33	autohotkey.svg
+34	autoit.svg
+35	azure-pipelines.svg
+36	azure.svg
+37	babel.svg
+38	ballerina.svg
+39	bazel.svg
+40	bicep.svg
+41	bitbucket.svg
+42	bithound.svg
+43	blink.svg
+44	blitz.svg
+45	bower.svg
+46	brainfuck.svg
+47	browserlist.svg
+48	buck.svg
+49	bucklescript.svg
+50	buildkite.svg
+51	c.svg
+52	cabal.svg
+53	caddy.svg
+54	cadence.svg
+55	cake.svg
+56	capacitor.svg
+57	certificate.svg
+58	changelog.svg
+59	chess.svg
+60	circleci.svg
+61	clojure.svg
+62	cloudfoundry.svg
+63	cmake.svg
+64	coala.svg
+65	cobol.svg
+66	coconut.svg
+67	code-climate.svg
+68	codecov.svg
+69	codeowners.svg
+70	coffee.svg
+71	coldfusion.svg
+72	command.svg
+73	commitlint.svg
+74	conduct.svg
+75	console.svg
+76	contributing.svg
+77	cpp.svg
+78	craco.svg
+79	credits.svg
+80	crystal.svg
+81	csharp.svg
+82	css-map.svg
+83	css.svg
+84	cucumber.svg
+85	cuda.svg
+86	cypress.svg
+87	d.svg
+88	dart.svg
+90	database.svg
+91	dependabot.svg
+92	dhall.svg
+93	diff.svg
+94	dinophp.svg
+95	disc.svg
+96	django.svg
+97	docker.svg
+98	document.svg
+99	dotjs.svg
+100	drawio.svg
+101	drone.svg
+102	dune.svg
+103	edge.svg
+104	editorconfig.svg
+105	ejs.svg
+106	elixir.svg
+107	elm.svg
+108	email.svg
+109	ember.svg
+110	erlang.svg
+111	eslint.svg
+112	exe.svg
+113	fastlane.svg
+114	favicon.svg
+115	figma.svg
+116	file.svg
+117	firebase.svg
+118	flash.svg
+119	flow.svg
+486	font.svg
+487	forth.svg
+488	fortran.svg
+489	foxpro.svg
+490	fsharp.svg
+491	fusebox.svg
+492	gatsby.svg
+493	gcp.svg
+494	gemfile.svg
+495	gemini.svg
+496	git.svg
+497	gitlab.svg
+498	gitpod.svg
+499	gleam.svg
+501	go.svg
+502	go_gopher.svg
+504	godot.svg
+505	gradle.svg
+506	grain.svg
+507	graphcool.svg
+508	graphql.svg
+509	gridsome.svg
+510	groovy.svg
+511	grunt.svg
+512	gulp.svg
+513	h.svg
+514	hack.svg
+515	haml.svg
+516	handlebars.svg
+517	hardhat.svg
+518	haskell.svg
+519	haxe.svg
+520	hcl.svg
+521	helm.svg
+522	heroku.svg
+523	hex.svg
+524	horusec.svg
+525	hpp.svg
+526	html.svg
+527	http.svg
+528	husky.svg
+529	i18n.svg
+530	idris.svg
+531	image.svg
+532	imba.svg
+533	ionic.svg
+534	istanbul.svg
+535	jar.svg
+536	java.svg
+537	javaclass.svg
+538	javascript-map.svg
+539	javascript.svg
+540	jenkins.svg
+541	jest.svg
+542	jinja.svg
+543	jsconfig.svg
+544	json.svg
+545	julia.svg
+546	jupyter.svg
+547	karma.svg
+548	key.svg
+549	kivy.svg
+550	kl.svg
+551	kotlin.svg
+552	kusto.svg
+553	laravel.svg
+554	lerna.svg
+555	less.svg
+556	lib.svg
+557	lighthouse.svg
+558	lilypond.svg
+559	liquid.svg
+560	lisp.svg
+561	livescript.svg
+562	lock.svg
+563	log.svg
+564	lolcode.svg
+565	lua.svg
+566	makefile.svg
+567	markdown.svg
+568	markojs.svg
+569	mathematica.svg
+570	matlab.svg
+571	maven.svg
+574	merlin.svg
+575	meson.svg
+576	minecraft.svg
+577	mint.svg
+578	mjml.svg
+579	mocha.svg
+580	modernizr.svg
+581	moonscript.svg
+582	mxml.svg
+583	nano-staged.svg
+584	ndst.svg
+595	nest.svg
+596	netlify.svg
+597	next.svg
+598	nginx.svg
+604	ngrx-state.svg
+605	nim.svg
+606	nix.svg
+607	nodejs.svg
+608	nodejs_alt.svg
+609	nodemon.svg
+610	npm.svg
+611	nrwl.svg
+612	nuget.svg
+613	nunjucks.svg
+614	nuxt.svg
+615	ocaml.svg
+616	odin.svg
+617	opa.svg
+618	opam.svg
+619	otne.svg
+620	parcel.svg
+621	pawn.svg
+622	pdf.svg
+623	percy.svg
+624	perl.svg
+625	php-cs-fixer.svg
+626	php.svg
+627	php_elephant.svg
+628	php_elephant_pink.svg
+629	phpunit.svg
+630	pinejs.svg
+631	pipeline.svg
+632	playwright.svg
+633	plop.svg
+634	pnpm.svg
+635	poetry.svg
+636	postcss.svg
+637	posthtml.svg
+638	powerpoint.svg
+639	powershell.svg
+640	prettier.svg
+641	prisma.svg
+642	processing.svg
+643	prolog.svg
+644	proto.svg
+645	protractor.svg
+646	pug.svg
+647	puppet.svg
+648	purescript.svg
+649	python-misc.svg
+650	python.svg
+651	qsharp.svg
+652	quasar.svg
+653	r.svg
+654	racket.svg
+655	raml.svg
+656	razor.svg
+657	react.svg
+659	readme.svg
+660	reason.svg
+661	red.svg
+665	redux-store.svg
+666	remix.svg
+667	renovate.svg
+668	replit.svg
+669	rescript-interface.svg
+670	rescript.svg
+671	restql.svg
+672	riot.svg
+673	roadmap.svg
+674	robot.svg
+675	robots.svg
+676	rollup.svg
+677	rome.svg
+678	routing.svg
+679	rubocop.svg
+680	ruby.svg
+681	rust.svg
+682	salesforce.svg
+683	san.svg
+684	sas.svg
+685	sass.svg
+686	sbt.svg
+687	scala.svg
+688	scheme.svg
+689	search.svg
+690	semantic-release.svg
+691	sentry.svg
+692	sequelize.svg
+693	serverless.svg
+694	settings.svg
+695	shader.svg
+696	shaderlab.svg
+697	silverstripe.svg
+698	siyuan.svg
+699	sketch.svg
+700	slim.svg
+701	slug.svg
+702	smarty.svg
+703	sml.svg
+704	snowpack.svg
+705	snyk.svg
+706	solidity.svg
+707	sonarcloud.svg
+708	steadybit.svg
+709	stencil.svg
+710	stitches.svg
+711	storybook.svg
+712	stryker.svg
+713	stylable.svg
+714	stylelint.svg
+715	stylus.svg
+716	sublime.svg
+717	supabase.svg
+718	svelte.svg
+719	svg.svg
+720	svgo.svg
+722	swc.svg
+723	swift.svg
+724	table.svg
+725	tailwindcss.svg
+726	tauri.svg
+727	tcl.svg
+728	teal.svg
+729	template.svg
+730	terraform.svg
+733	test-ts.svg
+734	tex.svg
+735	textlint.svg
+736	tilt.svg
+737	tldraw.svg
+738	tobi.svg
+739	tobimake.svg
+740	todo.svg
+741	travis.svg
+742	tree.svg
+743	tsconfig.svg
+744	tune.svg
+745	turborepo.svg
+746	twig.svg
+747	twine.svg
+748	typescript-def.svg
+749	typescript.svg
+750	uml.svg
+751	url.svg
+752	vagrant.svg
+753	vala.svg
+754	velocity.svg
+755	vercel.svg
+756	verdaccio.svg
+757	verilog.svg
+758	vfl.svg
+759	video.svg
+760	vim.svg
+761	virtual.svg
+762	visualstudio.svg
+763	vite.svg
+764	vitest.svg
+765	vlang.svg
+766	vscode.svg
+767	vue-config.svg
+768	vue.svg
+769	vuex-store.svg
+770	wakatime.svg
+771	wallaby.svg
+772	watchman.svg
+773	webassembly.svg
+774	webhint.svg
+775	webpack.svg
+776	wepy.svg
+777	windicss.svg
+778	wolframlanguage.svg
+779	word.svg
+780	xaml.svg
+781	xml.svg
+782	yaml.svg
+783	yang.svg
+784	yarn.svg
+785	zig.svg
+786	zip.svg

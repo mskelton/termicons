@@ -11,7 +11,10 @@ module.exports = {
   assetTypes: ["json", "html"],
   normalize: true,
   templates: {
-    html: "./src/template/preview.hbs",
+    html: "src/template/preview.hbs",
+  },
+  pathOptions: {
+    html: "dist/index.html",
   },
   formatOptions: {
     ttf: {

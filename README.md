@@ -1,6 +1,6 @@
 # termicons
 
-Material style icons built for terminal rendering.
+Material style icons optimized for terminal rendering
 
 ## Installation
 

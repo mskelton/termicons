@@ -1,6 +1,6 @@
 {
   "name": "termicons",
-  "description": "Material style icons built for terminal rendering",
+  "description": "Material style icons optimized for terminal rendering",
   "fontVersion": "1.0",
   "type": "module",
   "scripts": {

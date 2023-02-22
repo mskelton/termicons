@@ -5,15 +5,27 @@ const notificationText = document.getElementById("notification-text")
 let timer
 
 for (const icon of icons) {
-  icon.addEventListener("click", (e) => {
-    const { name, codepoint } = e.currentTarget.dataset
-
-    navigator.clipboard.writeText(String.fromCodePoint(codepoint))
-    notificationText.innerText = name
-    search.focus()
-
-    animate()
+  // To prevent focus from leaving the search box, manually handle mouse and
+  // keyboard events.
+  icon.addEventListener("mousedown", (e) => {
+    e.preventDefault()
+    copy(e)
   })
+
+  icon.addEventListener("keydown", (e) => {
+    if (e.key === "Enter" || e.key === " ") {
+      copy(e)
+    }
+  })
+}
+
+function copy(e) {
+  const { name, codepoint } = e.currentTarget.dataset
+
+  navigator.clipboard.writeText(String.fromCodePoint(codepoint))
+  notificationText.innerText = name
+
+  animate()
 }
 
 function animate() {

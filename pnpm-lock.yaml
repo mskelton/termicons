@@ -7,6 +7,7 @@ importers:
       '@tailwindcss/forms': ^0.5.3
       eslint: 8.34.0
       fantasticon: ^2.0.0
+      hex-format: ^2.2.1
       hexterm: ^2.0.1
       prettier: ^2.8.4
       tailwindcss: ^3.2.7
@@ -14,6 +15,7 @@ importers:
       '@tailwindcss/forms': 0.5.3_tailwindcss@3.2.7
       eslint: 8.34.0
       fantasticon: 2.0.0
+      hex-format: 2.2.1
       hexterm: 2.0.1
       prettier: 2.8.4
       tailwindcss: 3.2.7
@@ -828,6 +830,10 @@ packages:
   /cubic2quad/1.2.1:
     resolution: {integrity: sha512-wT5Y7mO8abrV16gnssKdmIhIbA9wSkeMzhh27jAguKrV82i24wER0vL5TGhUJ9dbJNDcigoRZ0IAHFEEEI4THQ==}
     dev: false
+
+  /custom-error/0.2.1:
+    resolution: {integrity: sha512-J+QO3e3Z0YpEaz04gNrPQMszcnkZeiS0l4Gj0OgBGzBVVOijE59rjiVFBpo/vSNM4/2TDCCZZ+WWlt1k8m33mQ==}
+    engines: {node: '>=0.10.0'}
 
   /d/1.0.1:
     resolution: {integrity: sha512-m62ShEObQ39CfralilEQRjH6oAMtNCV1xJyEx5LpRYUVN+EviphDgUc/F3hnYbADmkiNs67Y+3ylmlG7Lnu+FA==}
@@ -1743,6 +1749,12 @@ packages:
       tslib: 2.5.0
     dev: false
 
+  /hex-format/2.2.1:
+    resolution: {integrity: sha512-h+VTSNnRwTyUvDpfR+xKoLq4cqOBqlxC5R/6Sa+xPVK6U5fAL0UwwY/PvxgUpmfwQH5D+JC0yGpUfQ9uxeFtYg==}
+    dependencies:
+      options-config: 3.1.2
+    dev: false
+
   /hexterm/2.0.1:
     resolution: {integrity: sha512-kpaESvWluCHWtzhoRvZ5lD+sfSj1C4YaybHXuJLg2lAdEhUBUE4yEymsymsNH7X7qcEDzcUr+QQEDXc13jweTg==}
     hasBin: true
@@ -2086,6 +2098,15 @@ packages:
     dependencies:
       p-locate: 5.0.0
     dev: false
+
+  /lodash.includes/4.3.0:
+    resolution: {integrity: sha512-W3Bx6mdkRTGtlJISOvVD/lbqjTlPPUDTMnlXZFnVwi9NKJ6tiAk6LVdlhZMm17VZisqhKcgzpO5Wz91PCt5b0w==}
+
+  /lodash.isequal/4.5.0:
+    resolution: {integrity: sha512-pDo3lu8Jhfjqls6GkMgpahsF9kCyayhgykjyLMNFTKWrpVdAQtYyB4muAMWozBB4ig/dtWAmsMxLEI8wuz+DYQ==}
+
+  /lodash.isnumber/3.0.3:
+    resolution: {integrity: sha512-QYqzpfwO3/CWf3XP+Z+tkQsfaLL/EnUlXWVkIk5FUPc4sBdTehEqZONuyRt2P67PXAk+NXmTBcc97zw9t1FQrw==}
 
   /lodash.merge/4.6.2:
     resolution: {integrity: sha512-0KpjqXRVvrYyCsX1swR/XTK0va6VQkQM6MNo7PqW77ByjAhoARA8EfrP1N4+KlKj8YS0ZUCtRT/YUuhyYDujIQ==}
@@ -2496,6 +2517,14 @@ packages:
       type-check: 0.4.0
       word-wrap: 1.2.3
     dev: false
+
+  /options-config/3.1.2:
+    resolution: {integrity: sha512-pk2eHnanCWwagR3uBdboLigePtgXod/rPzdmdPyz1RTWu6oyK9wnDEF/TXRJnftpY2IjEhCkL741+KkZD6oogA==}
+    dependencies:
+      custom-error: 0.2.1
+      lodash.includes: 4.3.0
+      lodash.isequal: 4.5.0
+      lodash.isnumber: 3.0.3
 
   /p-limit/3.1.0:
     resolution: {integrity: sha512-TYOanM3wGwNGsZN2cVTYPArw454xnXj5qmWF1bEoAc4+cU/ol7GVh7odevjp1FNHduHc3KZMcFduxU5Xc6uJRQ==}

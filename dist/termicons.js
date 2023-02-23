@@ -55,7 +55,11 @@ search.addEventListener("keyup", (e) => {
   const query = e.target.value.toLowerCase()
 
   // Save the current search query in the URL
-  window.history.replaceState({}, "", `?q=${encodeURIComponent(query)}`)
+  window.history.replaceState(
+    {},
+    "",
+    query ? `?q=${encodeURIComponent(query)}` : "/"
+  )
 
   filterIcons(query)
 })

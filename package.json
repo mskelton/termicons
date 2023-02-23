@@ -4,7 +4,7 @@
   "fontVersion": "1.0",
   "type": "module",
   "scripts": {
-    "build": "fantasticon -c ./fantasticon.config.cjs",
+    "build": "node ./scripts/build.js",
     "css": "tailwindcss -i ./src/template/styles.css -o ./dist/termicons.css",
     "format": "prettier --write ."
   },

@@ -42,7 +42,7 @@ const promises = Object.entries(json).map(async ([key, codepoint]) => {
   const color = await inferColor(key)
   const ctermColor = hexterm(color)
 
-  return [key, { codepoint, color, ctermColor }]
+  return [key.replace(/-/g, "_"), { codepoint, color, ctermColor }]
 })
 
 const mappings = Object.fromEntries(await Promise.all(promises))

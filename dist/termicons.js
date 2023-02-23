@@ -53,13 +53,12 @@ function filterIcons(query) {
 
 search.addEventListener("keyup", (e) => {
   const query = e.target.value.toLowerCase()
+  filterIcons(query)
 
   // Save the current search query in the URL
-  window.history.replaceState(
-    {},
-    "",
-    query ? `?q=${encodeURIComponent(query)}` : "/"
-  )
+  const url = query
+    ? `?q=${encodeURIComponent(query)}`
+    : window.location.pathname
 
-  filterIcons(query)
+  window.history.replaceState({}, "", url)
 })

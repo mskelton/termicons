@@ -9,12 +9,11 @@
     "format": "prettier --write ."
   },
   "dependencies": {
-    "fantasticon": "^2.0.0"
-  },
-  "devDependencies": {
     "@tailwindcss/forms": "^0.5.3",
-    "prettier": "^2.8.4",
     "eslint": "8.34.0",
+    "fantasticon": "^2.0.0",
+    "hexterm": "^2.0.1",
+    "prettier": "^2.8.4",
     "tailwindcss": "^3.2.7"
   }
 }

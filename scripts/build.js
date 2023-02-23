@@ -1,5 +1,6 @@
 import fs from "node:fs/promises"
 import { generateFonts } from "fantasticon"
+import { hexterm } from "hexterm"
 import manifest from "../package.json" assert { type: "json" }
 import codepoints from "../src/template/mapping.json" assert { type: "json" }
 
@@ -38,7 +39,10 @@ async function inferColor(key) {
 // Add additional metadata to the JSON file
 const json = JSON.parse(res.assetsOut.json)
 const promises = Object.entries(json).map(async ([key, codepoint]) => {
-  return [key, { codepoint, color: await inferColor(key) }]
+  const color = await inferColor(key)
+  const ctermColor = hexterm(color)
+
+  return [key, { codepoint, color, ctermColor }]
 })
 
 const mappings = Object.fromEntries(await Promise.all(promises))

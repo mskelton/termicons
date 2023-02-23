@@ -4,6 +4,11 @@ const notification = document.getElementById("notification")
 const notificationText = document.getElementById("notification-text")
 let timer
 
+// Auto-fill the search input with the query param
+const params = new URLSearchParams(window.location.search)
+search.value = params.get("q") ?? ""
+filterIcons(search.value)
+
 for (const icon of icons) {
   // To prevent focus from leaving the search box, manually handle mouse and
   // keyboard events.
@@ -39,11 +44,18 @@ function animate() {
   }, 3000)
 }
 
-search.addEventListener("keyup", (e) => {
-  const query = e.target.value.toLowerCase()
-
+function filterIcons(query) {
   for (const icon of icons) {
     const name = icon.dataset.name.toLowerCase()
     icon.style.display = name.includes(query) ? "" : "none"
   }
+}
+
+search.addEventListener("keyup", (e) => {
+  const query = e.target.value.toLowerCase()
+
+  // Save the current search query in the URL
+  window.history.replaceState({}, "", `?q=${encodeURIComponent(query)}`)
+
+  filterIcons(query)
 })

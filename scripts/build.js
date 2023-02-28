@@ -1,6 +1,5 @@
 import fs from "node:fs/promises"
 import { generateFonts } from "fantasticon"
-import { hexterm } from "hexterm"
 import { default as Hex } from "hex-format"
 import manifest from "../package.json" assert { type: "json" }
 import codepoints from "../src/template/mapping.json" assert { type: "json" }
@@ -44,9 +43,8 @@ async function inferColor(key) {
 const json = JSON.parse(res.assetsOut.json)
 const promises = Object.entries(json).map(async ([key, codepoint]) => {
   const color = await inferColor(key)
-  const ctermColor = hexterm(color)
 
-  return [key.replace(/-/g, "_"), { codepoint, color, ctermColor }]
+  return [key.replace(/-/g, "_"), { codepoint, color }]
 })
 
 const mappings = Object.fromEntries(await Promise.all(promises))

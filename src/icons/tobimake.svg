@@ -1,10 +1,4 @@
-<svg
-  width="24"
-  height="24"
-  viewBox="0 0 24 24"
-  fill="none"
-  xmlns="http://www.w3.org/2000/svg"
->
+<svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
   <path
     d="M6 2H14L20 8V10.1H23.1V23.1H10.1V22H6C4.9 22 4 21.1 4 20V4C4 2.9 4.9 2 6 2ZM13 9H18.5L13 3.5V9ZM6 12V14H10.1V12H6ZM6 16V18H10.1V16H6ZM11.75 14.65H13.45V19.65H14.75V14.65H16.45V13.55H11.75V14.65ZM18.65 13.55H17.45V19.65H21.45V18.55H18.65V13.55Z"
     fill="#C2185B"

@@ -7,7 +7,7 @@
     "build": "node ./scripts/build.js",
     "dev": "nodemon -e js,svg ./scripts/build.js",
     "css": "tailwindcss -i ./src/template/styles.css -o ./dist/termicons.css",
-    "format": "prettier --write ."
+    "format": "prettier --write '**/*.{js,svg,hbs,yml,md,cjs,json,css}'"
   },
   "dependencies": {
     "@tailwindcss/forms": "^0.5.3",

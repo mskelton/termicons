@@ -1,12 +1,12 @@
-<svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+<svg
+  width="24"
+  height="24"
+  viewBox="0 0 24 24"
+  fill="none"
+  xmlns="http://www.w3.org/2000/svg"
+>
   <path
-    style="fill: #1e88e5; stroke-width: 0.89894"
-    d="M125.55 98.701h331.24v883.32H125.55z"
-    transform="translate(1.705 1.135) scale(.0201)"
-  />
-  <path
-    d="M125.55 816.4c0-607.28 772.91-607.28 772.91-607.28v331.24s-441.66 0-441.66 276.04v165.62H125.56z"
-    style="fill: #69f0ae; stroke-width: 0.89894"
-    transform="translate(1.705 1.135) scale(.0201)"
+    d="M10.8865 3.1189H4.22855V20.8736H10.8865L10.8867 17.5446C10.8867 11.9962 19.764 11.9962 19.764 11.9962V5.33832C19.764 5.33832 15.1026 5.33832 10.8865 7.34455V3.1189Z"
+    fill="#69F0AE"
   />
 </svg>

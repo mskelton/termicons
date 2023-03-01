@@ -1,15 +1,12 @@
 <svg
+  width="24"
+  height="24"
   viewBox="0 0 24 24"
-  xml:space="preserve"
+  fill="none"
   xmlns="http://www.w3.org/2000/svg"
 >
   <path
-    d="M13 9h5.5L13 3.5V9M6 2h8l6 6v12c0 1.1-.9 2-2 2H6c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2m9 16v-2H6v2h9m3-4v-2H6v2h12z"
-    style="fill: #757575"
-  />
-  <path d="M10.1 10.1h13v13h-13v-13z" style="fill: #c2185b" />
-  <path
-    class="st2"
-    d="M13.45 14.65h-1.7v-1.1h4.7v1.1h-1.7v5h-1.3zm3.9-1.1h1.3v5h2.8v1.1h-4v-6.1z"
+    d="M6 2H14L20 8V10.1H23.1V23.1H10.1V22H6C4.9 22 4 21.1 4 20V4C4 2.9 4.9 2 6 2ZM13 9H18.5L13 3.5V9ZM6 12V14H10.1V12H6ZM6 16V18H10.1V16H6ZM11.75 14.65H13.45V19.65H14.75V14.65H16.45V13.55H11.75V14.65ZM18.65 13.55H17.45V19.65H21.45V18.55H18.65V13.55Z"
+    fill="#C2185B"
   />
 </svg>

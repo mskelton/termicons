@@ -1,17 +1,12 @@
 <svg
+  width="24"
+  height="24"
   viewBox="0 0 24 24"
+  fill="none"
   xmlns="http://www.w3.org/2000/svg"
-  xml:space="preserve"
-  style="
-    fill-rule: evenodd;
-    clip-rule: evenodd;
-    stroke-linejoin: round;
-    stroke-miterlimit: 1.41421;
-  "
 >
   <path
-    d="M3 17v2h6v-2H3M3 5v2h10V5H3m10 16v-2h8v-2h-8v-2h-2v6h2M7 9v2H3v2h4v2h2V9H7m14 4v-2H11v2h10m-6-4h2V7h4V5h-4V3h-2v6z"
-    style="fill: #fbc02d; fill-rule: nonzero"
-    transform="rotate(90 11.999 11.85)"
+    d="M6.849 2.85101H4.849V8.85101H6.849V2.85101ZM18.849 2.85101H16.849V12.851H18.849V2.85101ZM2.849 12.851H4.849V20.851H6.849V12.851H8.849V10.851H2.849V12.851ZM14.849 6.85101H12.849V2.85101H10.849V6.85101H8.849V8.85101H14.849V6.85101ZM10.849 20.851H12.849V10.851H10.849V20.851ZM14.849 14.851V16.851H16.849V20.851H18.849V16.851H20.849V14.851H14.849Z"
+    fill="#FBC02D"
   />
 </svg>

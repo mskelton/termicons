@@ -386,5 +386,6 @@
   "folder": 53632,
   "folder-open": 53633,
   "folder-empty": 53634,
-  "folder-empty-open": 53635
+  "folder-empty-open": 53635,
+  "luarocks": 53636
 }

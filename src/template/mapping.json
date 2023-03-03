@@ -389,5 +389,6 @@
   "folder-empty-open": 53635,
   "luarocks": 53636,
   "folder-symlink": 53637,
-  "folder-symlink-open": 53638
+  "folder-symlink-open": 53638,
+  "file-symlink": 53639
 }

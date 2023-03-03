@@ -3,10 +3,16 @@ import { generateFonts } from "fantasticon"
 import manifest from "../package.json" assert { type: "json" }
 import codepoints from "../src/template/mapping.json" assert { type: "json" }
 
+// The list of codepoints in the mapping file are not necessarily sorted
+// alphabetically, so we need to post process it.
+const sortedCodepoints = Object.fromEntries(
+  Object.entries(codepoints).sort((a, b) => a[0].localeCompare(b[0]))
+)
+
 const res = await generateFonts({
   name: "termicons",
   prefix: "termicon",
-  codepoints: codepoints,
+  codepoints: sortedCodepoints,
   inputDir: "./src/icons",
   outputDir: "./dist",
   fontTypes: ["ttf", "woff", "woff2"],
@@ -46,6 +52,23 @@ async function inferColor(key) {
   return hexFormat(value.toLowerCase())
 }
 
+// Update the codepoint range in the readme
+async function updateReadme() {
+  const url = new URL("../README.md", import.meta.url)
+  const original = await fs.readFile(url, "utf-8")
+
+  const endCodepoint = codepoints[Object.keys(codepoints).pop()]
+    .toString(16)
+    .toUpperCase()
+
+  const updated = original.replace(
+    /symbol_map.*/,
+    `symbol_map U+D000-U+${endCodepoint} termicons`
+  )
+
+  await fs.writeFile(url, updated)
+}
+
 // Add additional metadata to the JSON file
 const json = JSON.parse(res.assetsOut.json)
 const promises = Object.entries(json).map(async ([key, codepoint]) => {
@@ -57,3 +80,5 @@ const promises = Object.entries(json).map(async ([key, codepoint]) => {
 const mappings = Object.fromEntries(await Promise.all(promises))
 const jsonURL = new URL("../dist/termicons.json", import.meta.url)
 await fs.writeFile(jsonURL, JSON.stringify(mappings, null, 2))
+
+await updateReadme()

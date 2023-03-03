@@ -44,7 +44,7 @@ const json = JSON.parse(res.assetsOut.json)
 const promises = Object.entries(json).map(async ([key, codepoint]) => {
   const color = await inferColor(key)
 
-  return [key.replace(/-/g, "_"), { codepoint, color }]
+  return [key, { codepoint, color }]
 })
 
 const mappings = Object.fromEntries(await Promise.all(promises))

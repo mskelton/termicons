@@ -391,5 +391,6 @@
   "folder-symlink": 53637,
   "folder-symlink-open": 53638,
   "file-symlink": 53639,
-  "bash": 53640
+  "bash": 53640,
+  "toml": 53641
 }

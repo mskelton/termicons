@@ -390,5 +390,6 @@
   "luarocks": 53636,
   "folder-symlink": 53637,
   "folder-symlink-open": 53638,
-  "file-symlink": 53639
+  "file-symlink": 53639,
+  "bash": 53640
 }

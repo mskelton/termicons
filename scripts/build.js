@@ -19,7 +19,7 @@ const res = await generateFonts({
   fontTypes: ["ttf", "woff", "woff2"],
   assetTypes: ["json", "html"],
   normalize: true,
-  descent: 55,
+  descent: 50,
   templates: {
     html: "src/template/preview.hbs",
   },

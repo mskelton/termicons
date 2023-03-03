@@ -13,7 +13,7 @@ your system font manager.
 To setup termicons with [Kitty], add the following to your `kitty.conf` file.
 
 ```kitty
-symbol_map U+D000-U+D181 termicons
+symbol_map U+D000-U+D183 termicons
 ```
 
 _Note: As new icons are added, the end codepoint will change, so ensure you

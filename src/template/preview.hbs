@@ -80,7 +80,12 @@
               &#{{this}};
             </span>
 
-            <span class="text-xs">{{@key}}</span>
+            <span
+              class="text-xs whitespace-nowrap overflow-ellipsis max-w-full overflow-hidden px-2"
+              title="{{@key}}"
+            >
+              {{@key}}
+            </span>
           </button>
         {{/each}}
       </div>

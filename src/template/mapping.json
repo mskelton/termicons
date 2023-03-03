@@ -384,5 +384,7 @@
   "bun": 53630,
   "gamemaker": 53631,
   "folder": 53632,
-  "folder-open": 53633
+  "folder-open": 53633,
+  "folder-empty": 53634,
+  "folder-empty-open": 53635
 }

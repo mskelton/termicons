@@ -2,6 +2,8 @@ const search = document.getElementById("search")
 const icons = document.querySelectorAll(".icon")
 const notification = document.getElementById("notification")
 const notificationText = document.getElementById("notification-text")
+const emptyState = document.getElementById("empty-state")
+
 let timer
 
 // Auto-fill the search input with the query param
@@ -45,10 +47,18 @@ function animate() {
 }
 
 function filterIcons(query) {
+  let count = 0
+
   for (const icon of icons) {
     const name = icon.dataset.name.toLowerCase()
-    icon.style.display = name.includes(query) ? "" : "none"
+    const matches = name.includes(query)
+
+    icon.style.display = matches ? "" : "none"
+    count += matches ? 1 : 0
   }
+
+  emptyState.classList.toggle("hidden", !!count)
+  emptyState.classList.toggle("flex", !count)
 }
 
 search.addEventListener("keyup", (e) => {

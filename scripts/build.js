@@ -1,6 +1,5 @@
 import fs from "node:fs/promises"
 import { generateFonts } from "fantasticon"
-import { default as Hex } from "hex-format"
 import manifest from "../package.json" assert { type: "json" }
 import codepoints from "../src/template/mapping.json" assert { type: "json" }
 
@@ -29,14 +28,22 @@ const res = await generateFonts({
   },
 })
 
-const hex = new Hex.default()
+function hexFormat(value) {
+  return value.replace(/^#?([a-f\d])([a-f\d])([a-f\d])$/i, (_, r, g, b) => {
+    return "#" + r + r + g + g + b + b
+  })
+}
 
 async function inferColor(key) {
   const content = await fs.readFile(`./src/icons/${key}.svg`, "utf-8")
-  const match = content.match(/fill[:=]\s?"?(#[A-z\d]{3,6})/)
+  const match = content.match(/fill[:=]\s?"?(#[a-f\d]{3,6})/i)
   const value = match?.[1] ?? "#ffffff"
 
-  return hex.format(value).toLowerCase()
+  if (!match) {
+    console.warn(`WARN: No fill color found for ${key}`)
+  }
+
+  return hexFormat(value.toLowerCase())
 }
 
 // Add additional metadata to the JSON file

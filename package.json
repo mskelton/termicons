@@ -12,12 +12,11 @@
   "dependencies": {
     "@tailwindcss/forms": "^0.5.3",
     "fantasticon": "^2.0.0",
-    "hex-format": "^2.2.1",
     "tailwindcss": "^3.2.7"
   },
   "devDependencies": {
     "eslint": "8.34.0",
-    "nodemon": "^2.0.20",
+    "nodemon": "^2.0.21",
     "prettier": "^2.8.4"
   }
 }

@@ -382,5 +382,7 @@
   "zig": 53628,
   "zip": 53629,
   "bun": 53630,
-  "gamemaker": 53631
+  "gamemaker": 53631,
+  "folder": 53632,
+  "folder-open": 53633
 }

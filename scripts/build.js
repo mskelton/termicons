@@ -1,4 +1,5 @@
 import fs from "node:fs/promises"
+import os from "node:os"
 import { generateFonts } from "fantasticon"
 import manifest from "../package.json" assert { type: "json" }
 import codepoints from "../src/template/mapping.json" assert { type: "json" }
@@ -70,15 +71,29 @@ async function updateReadme() {
 }
 
 // Add additional metadata to the JSON file
-const json = JSON.parse(res.assetsOut.json)
-const promises = Object.entries(json).map(async ([key, codepoint]) => {
-  const color = await inferColor(key)
+async function updateJSON() {
+  const json = JSON.parse(res.assetsOut.json)
+  const promises = Object.entries(json).map(async ([key, codepoint]) => {
+    const color = await inferColor(key)
 
-  return [key, { codepoint, color }]
-})
+    return [key, { codepoint, color }]
+  })
 
-const mappings = Object.fromEntries(await Promise.all(promises))
-const jsonURL = new URL("../dist/termicons.json", import.meta.url)
-await fs.writeFile(jsonURL, JSON.stringify(mappings, null, 2))
+  const mappings = Object.fromEntries(await Promise.all(promises))
+  const jsonURL = new URL("../dist/termicons.json", import.meta.url)
+  await fs.writeFile(jsonURL, JSON.stringify(mappings, null, 2))
+}
 
+async function copyFont() {
+  const source = new URL("../dist/termicons.ttf", import.meta.url)
+  const dest = new URL(`file://${os.homedir()}/Library/Fonts/termicons.ttf`)
+
+  await fs.copyFile(source, dest)
+}
+
+await updateJSON()
 await updateReadme()
+
+if (process.argv.includes("--dev")) {
+  await copyFont()
+}

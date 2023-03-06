@@ -6,7 +6,7 @@
   "scripts": {
     "build": "node ./scripts/build.js",
     "dev": "nodemon -e js,svg,hbs,json -i dist/ ./scripts/build.js --dev",
-    "compare": "open https://github.com/PKief/vscode-material-icon-theme/compare/$(git rev-parse HEAD:material-icons)..main",
+    "sync": "./scripts/sync.sh",
     "css": "tailwindcss -i ./src/template/styles.css -o ./dist/termicons.css",
     "format": "prettier --write '**/*.{js,svg,hbs,yml,md,cjs,json,css}'"
   },

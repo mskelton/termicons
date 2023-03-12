@@ -43,7 +43,7 @@ function hexFormat(value) {
 
 async function inferColor(key) {
   const content = await fs.readFile(`./src/icons/${key}.svg`, "utf-8")
-  const match = content.match(/fill[:=]\s?"?(#[a-f\d]{3,6})/i)
+  const match = content.match(/fill="(#[a-f\d]{3,6})/i)
   const value = match?.[1] ?? "#ffffff"
 
   if (!match) {
@@ -80,11 +80,10 @@ async function readMappings() {
   // The vscode extension is written in TypeScript, so we have to do some
   // transformation to properly read it.
   const content = (await fs.readFile(url, "utf-8"))
-    .replace("export ", "")
+    .replace("export const fileIcons", "global.fileIcons")
     .replace(/import.*/g, "")
     .replace(": FileIcons", "")
     .replace(/IconPack\.([A-Za-z]+)/g, '"$1"')
-    .replace("const fileIcons", "global.fileIcons")
 
   // This is probably the first time I've ever used eval and felt right about it :)
   eval(content)

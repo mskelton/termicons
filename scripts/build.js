@@ -70,13 +70,45 @@ async function updateReadme() {
   await fs.writeFile(url, updated)
 }
 
+// Read the mappings from the vscode extension to automatically get their matches
+async function readMappings() {
+  const url = new URL(
+    "../material-icons/src/icons/fileIcons.ts",
+    import.meta.url
+  )
+
+  // The vscode extension is written in TypeScript, so we have to do some
+  // transformation to properly read it.
+  const content = (await fs.readFile(url, "utf-8"))
+    .replace("export ", "")
+    .replace(/import.*/g, "")
+    .replace(": FileIcons", "")
+    .replace(/IconPack\.([A-Za-z]+)/g, '"$1"')
+    .replace("const fileIcons", "global.fileIcons")
+
+  // This is probably the first time I've ever used eval and felt right about it :)
+  eval(content)
+
+  return fileIcons.icons
+}
+
 // Add additional metadata to the JSON file
 async function updateJSON() {
+  const sourceMappings = await readMappings()
   const json = JSON.parse(res.assetsOut.json)
   const promises = Object.entries(json).map(async ([key, codepoint]) => {
+    const source = sourceMappings.find((m) => m.name === key)
     const color = await inferColor(key)
 
-    return [key, { codepoint, color }]
+    return [
+      key,
+      {
+        codepoint,
+        color,
+        filenames: source?.fileNames ?? [],
+        extensions: source?.fileExtensions ?? [],
+      },
+    ]
   })
 
   const mappings = Object.fromEntries(await Promise.all(promises))

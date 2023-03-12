@@ -120,11 +120,13 @@ async function updateJSON() {
   // with a different color. This is useful to include in the JSON file to
   // include filename/extension mappings from the vscode extension.
   Object.entries(overrides).forEach(([key, meta]) => {
-    mappings[key] = mapIcon(key, codepoints[meta.icon], meta.color)
+    const mapping = mapIcon(key, codepoints[meta.icon], meta.color)
 
-    if (!mappings[key].extensions.length && !mappings[key].filenames.length) {
+    if (!mapping.extensions.length && !mapping.filenames.length) {
       console.warn(`WARN: No filename/extension mappings found for ${key}`)
     }
+
+    mappings[key.replace(/_/g, "-")] = mapping
   })
 
   // Sort the mappings alphabetically

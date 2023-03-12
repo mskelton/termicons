@@ -114,8 +114,7 @@ async function updateJSON() {
     mapIcon(key, codepoint, await inferColor(key)),
   ])
 
-  let mappings = Object.fromEntries(await Promise.all(promises))
-  mappings = {}
+  const mappings = Object.fromEntries(await Promise.all(promises))
 
   // Add any overrides to the list of mappings. Overrides use the same icons but
   // with a different color. This is useful to include in the JSON file to

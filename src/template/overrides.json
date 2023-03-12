@@ -31,6 +31,10 @@
     "icon": "markdown",
     "color": "#FF5722"
   },
+  "mdx": {
+    "icon": "markdown",
+    "color": "#FFCA28"
+  },
   "nest-controller": {
     "icon": "nest",
     "color": "#0288d1"
@@ -78,6 +82,10 @@
   "objective-cpp": {
     "icon": "cpp",
     "color": "#ffab40"
+  },
+  "python-misc": {
+    "icon": "python",
+    "color": "#3c78aa"
   },
   "react_ts": {
     "icon": "react",

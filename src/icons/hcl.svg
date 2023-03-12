@@ -1,29 +1,14 @@
-<svg
-  style="
-    clip-rule: evenodd;
-    fill-rule: evenodd;
-    stroke-linejoin: round;
-    stroke-miterlimit: 1.4142;
-  "
-  viewBox="0 0 24 24"
-  xml:space="preserve"
-  xmlns="http://www.w3.org/2000/svg"
->
-  <g style="fill: #eceff1">
-    <path
-      d="M44.5 0 0 25.7v61.7l16.7 9.7V35.3l27.8-16z"
-      style="fill-rule: nonzero; fill: #eceff1"
-      transform="translate(2.764 2.229) scale(.17279)"
-    />
-    <path
-      d="M62.3 0v49.2H44.5V30.8l-16.7 9.7v62.9l16.7 9.7v-49h17.8v18.2l16.8-9.6v-63z"
-      style="fill-rule: nonzero; fill: #eceff1"
-      transform="translate(2.764 2.229) scale(.17279)"
-    />
-    <path
-      d="m62.3 113.1 44.6-25.7V25.7l-16.8-9.6v61.7l-27.8 16z"
-      style="fill-rule: nonzero; fill: #eceff1"
-      transform="translate(2.764 2.229) scale(.17279)"
-    />
-  </g>
+<svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+  <path
+    d="M10.4532 2.229L2.76401 6.66971V17.3308L5.6496 19.0069V8.32849L10.4532 5.56385V2.229Z"
+    fill="#ECEFF1"
+  />
+  <path
+    d="M13.5288 2.229V10.7303H10.4532V7.55094L7.56757 9.227V20.0955L10.4532 21.7716V13.3048H13.5288V16.4496L16.4317 14.7908V3.90507L13.5288 2.229Z"
+    fill="#ECEFF1"
+  />
+  <path
+    d="M13.5288 21.7716L21.2353 17.3309V6.66971L18.3324 5.01093V15.6721L13.5288 18.4367V21.7716Z"
+    fill="#ECEFF1"
+  />
 </svg>

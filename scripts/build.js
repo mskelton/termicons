@@ -3,6 +3,7 @@ import os from "node:os"
 import { generateFonts } from "fantasticon"
 import manifest from "../package.json" assert { type: "json" }
 import codepoints from "../src/template/mapping.json" assert { type: "json" }
+import overrides from "../src/template/overrides.json" assert { type: "json" }
 
 // The list of codepoints in the mapping file are not necessarily sorted
 // alphabetically, so we need to post process it.
@@ -83,7 +84,7 @@ async function readMappings() {
     .replace("export const fileIcons", "global.fileIcons")
     .replace(/import.*/g, "")
     .replace(": FileIcons", "")
-    .replace(/IconPack\.([A-Za-z]+)/g, '"$1"')
+    .replace(/IconPack\.([A-Za-z]+)/g, (_, name) => `"${name.toLowerCase()}"`)
 
   // This is probably the first time I've ever used eval and felt right about it :)
   eval(content)
@@ -91,30 +92,51 @@ async function readMappings() {
   return fileIcons.icons
 }
 
-// Add additional metadata to the JSON file
-async function updateJSON() {
-  const sourceMappings = await readMappings()
-  const json = JSON.parse(res.assetsOut.json)
-  const promises = Object.entries(json).map(async ([key, codepoint]) => {
-    const source = sourceMappings.find((m) => m.name === key)
-    const color = await inferColor(key)
+const sourceMappings = await readMappings()
 
-    return [
-      key,
-      {
-        codepoint,
-        color,
-        filenames: source?.fileNames ?? [],
-        extensions: source?.fileExtensions ?? [],
-      },
-    ]
-  })
+function mapIcon(key, codepoint, color) {
+  const source = sourceMappings.find((m) => m.name === key)
 
-  const mappings = Object.fromEntries(await Promise.all(promises))
-  const jsonURL = new URL("../dist/termicons.json", import.meta.url)
-  await fs.writeFile(jsonURL, JSON.stringify(mappings, null, 2))
+  return {
+    codepoint,
+    color,
+    enabledFor: source?.enabledFor ?? [],
+    filenames: source?.fileNames ?? [],
+    extensions: source?.fileExtensions ?? [],
+  }
 }
 
+// Add additional metadata to the JSON file
+async function updateJSON() {
+  const json = JSON.parse(res.assetsOut.json)
+  const promises = Object.entries(json).map(async ([key, codepoint]) => [
+    key,
+    mapIcon(key, codepoint, await inferColor(key)),
+  ])
+
+  let mappings = Object.fromEntries(await Promise.all(promises))
+  mappings = {}
+
+  // Add any overrides to the list of mappings. Overrides use the same icons but
+  // with a different color. This is useful to include in the JSON file to
+  // include filename/extension mappings from the vscode extension.
+  Object.entries(overrides).forEach(([key, meta]) => {
+    mappings[key] = mapIcon(key, codepoints[meta.icon], meta.color)
+
+    if (!mappings[key].extensions.length && !mappings[key].filenames.length) {
+      console.warn(`WARN: No filename/extension mappings found for ${key}`)
+    }
+  })
+
+  // Sort the mappings alphabetically
+  const sortedMappings = Object.fromEntries(Object.entries(mappings).sort())
+
+  // Write the mappings to the output JSON file
+  const jsonURL = new URL("../dist/termicons.json", import.meta.url)
+  await fs.writeFile(jsonURL, JSON.stringify(sortedMappings, null, 2))
+}
+
+// Copy the font to the user's font directory
 async function copyFont() {
   const source = new URL("../dist/termicons.ttf", import.meta.url)
   const dest = new URL(`file://${os.homedir()}/Library/Fonts/termicons.ttf`)

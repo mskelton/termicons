@@ -1,0 +1,114 @@
+{
+  "advpl_include": {
+    "icon": "advpl",
+    "color": "#00bcd4"
+  },
+  "advpl_prw": {
+    "icon": "advpl",
+    "color": "#7986cb"
+  },
+  "advpl_ptm": {
+    "icon": "advpl",
+    "color": "#ef5350"
+  },
+  "advpl_tlpp": {
+    "icon": "advpl",
+    "color": "#fbc02d"
+  },
+  "dart_generated": {
+    "icon": "dart",
+    "color": "#455a64"
+  },
+  "godot-assets": {
+    "icon": "godot",
+    "color": "#81c784"
+  },
+  "javaclass": {
+    "icon": "java",
+    "color": "#1e88e5"
+  },
+  "mdsvex": {
+    "icon": "markdown",
+    "color": "#FF5722"
+  },
+  "nest-controller": {
+    "icon": "nest",
+    "color": "#0288d1"
+  },
+  "nest-decorator": {
+    "icon": "nest",
+    "color": "#ab47bc"
+  },
+  "nest-filter": {
+    "icon": "nest",
+    "color": "#ff7043"
+  },
+  "nest-gateway": {
+    "icon": "nest",
+    "color": "#afb42b"
+  },
+  "nest-guard": {
+    "icon": "nest",
+    "color": "#43a047"
+  },
+  "nest-middleware": {
+    "icon": "nest",
+    "color": "#5c6bc0"
+  },
+  "nest-module": {
+    "icon": "nest",
+    "color": "#e53935"
+  },
+  "nest-pipe": {
+    "icon": "nest",
+    "color": "#00897b"
+  },
+  "nest-resolver": {
+    "icon": "nest",
+    "color": "#ec407a"
+  },
+  "nest-service": {
+    "icon": "nest",
+    "color": "#ffca28"
+  },
+  "objective-c": {
+    "icon": "c",
+    "color": "#ffab40"
+  },
+  "objective-cpp": {
+    "icon": "cpp",
+    "color": "#ffab40"
+  },
+  "react_ts": {
+    "icon": "react",
+    "color": "#0288d1"
+  },
+  "redux-action": {
+    "icon": "redux",
+    "color": "#ab47bc"
+  },
+  "redux-reducer": {
+    "icon": "redux",
+    "color": "#ef5350"
+  },
+  "redux-selector": {
+    "icon": "redux",
+    "color": "#ff6e40"
+  },
+  "redux-store": {
+    "icon": "redux",
+    "color": "#8bc34a"
+  },
+  "svgr": {
+    "icon": "react",
+    "color": "#ffb300"
+  },
+  "test-js": {
+    "icon": "test",
+    "color": "#ffca28"
+  },
+  "test-ts": {
+    "icon": "test",
+    "color": "#0288d1"
+  }
+}

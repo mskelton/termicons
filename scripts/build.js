@@ -54,18 +54,22 @@ async function inferColor(key) {
   return hexFormat(value.toLowerCase())
 }
 
+function formatCodepoint(key) {
+  return "U+" + codepoints[key].toString(16).toUpperCase()
+}
+
 // Update the codepoint range in the readme
 async function updateReadme() {
   const url = new URL("../README.md", import.meta.url)
   const original = await fs.readFile(url, "utf-8")
 
-  const endCodepoint = codepoints[Object.keys(codepoints).pop()]
-    .toString(16)
-    .toUpperCase()
+  const keys = Object.keys(codepoints)
+  const start = formatCodepoint(keys[0])
+  const end = formatCodepoint(keys.at(-1))
 
   const updated = original.replace(
     /symbol_map.*/,
-    `symbol_map U+D000-U+${endCodepoint} termicons`
+    `symbol_map ${start}-${end} termicons`
   )
 
   await fs.writeFile(url, updated)

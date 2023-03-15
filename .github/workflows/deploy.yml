@@ -45,3 +45,17 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v1
+  update-nvim-plugin:
+    needs: deploy
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/github-script@v6
+        with:
+          github-token: ${{ secrets.PAT_TOKEN }}
+          script: |
+            await github.rest.actions.createWorkflowDispatch({
+              owner: 'mskelton',
+              repo: 'termicons.nvim',
+              workflow_id: 'build.yml',
+              ref: 'main'
+            })

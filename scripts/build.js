@@ -28,6 +28,9 @@ const res = await generateFonts({
     html: "dist/index.html",
   },
   formatOptions: {
+    html: {
+      baseURL: process.env.NODE_ENV === "production" ? "/termicons/" : "",
+    },
     ttf: {
       url: manifest.url,
       description: manifest.description,

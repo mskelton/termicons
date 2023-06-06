@@ -418,5 +418,8 @@
   "spack": 53664,
   "amazon": 53665,
   "windows": 53666,
-  "package": 53667
+  "package": 53667,
+  "unknown": 53668,
+  "ubuntu": 53669,
+  "linux": 53670
 }

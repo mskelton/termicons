@@ -415,5 +415,8 @@
   "conda": 53661,
   "guix": 53662,
   "memory": 53663,
-  "spack": 53664
+  "spack": 53664,
+  "amazon": 53665,
+  "windows": 53666,
+  "package": 53667
 }

@@ -421,5 +421,6 @@
   "package": 53667,
   "unknown": 53668,
   "ubuntu": 53669,
-  "linux": 53670
+  "linux": 53670,
+  "semgrep": 53671
 }

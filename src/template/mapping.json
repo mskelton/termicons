@@ -422,5 +422,6 @@
   "unknown": 53668,
   "ubuntu": 53669,
   "linux": 53670,
-  "semgrep": 53671
+  "semgrep": 53671,
+  "werf": 53672
 }

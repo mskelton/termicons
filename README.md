@@ -19,3 +19,7 @@ symbol_map U+D000-U+D1AA termicons
 _Note: As new icons are added, the end codepoint will change, so ensure you
 check the README when updating to the latest version to ensure you have the
 latest end codepoint in your Kitty config._
+
+### Neovim
+
+For an alternative set of icons for [nvim-web-devicons](https://github.com/nvim-tree/nvim-web-devicons) you can use the [termicons.nvim](https://github.com/mskelton/termicons.nvim) plugin for Neovim which will use termicons for file icons.

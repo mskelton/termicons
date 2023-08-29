@@ -1,4 +1,4 @@
-<html lang="en">
+<html class="h-full" lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
@@ -8,7 +8,7 @@
     <script defer src="{{fontsUrl}}termicons.js"></script>
   </head>
 
-  <body>
+  <body class="flex flex-col h-full">
     <header class="bg-gray-900 py-12 sm:py-20">
       <div class="mx-auto max-w-7xl px-6 lg:px-8">
         <div class="block md:flex justify-between items-center">
@@ -51,7 +51,7 @@
       </div>
     </header>
 
-    <main class="mx-auto max-w-7xl py-12 px-6 lg:px-8">
+    <main class="mx-auto w-full max-w-7xl py-12 px-6 lg:px-8 flex-1">
       <div>
         <label for="search" class="sr-only">
           Search icons
@@ -114,9 +114,27 @@
 
     <footer class="bg-white">
       <div
-        class="mx-auto max-w-7xl py-12 px-6 md:flex md:items-center md:justify-between lg:px-8"
+        class="mx-auto max-w-7xl py-8 px-6 md:flex md:items-end md:justify-between lg:px-8"
       >
-        <div class="flex justify-center space-x-6 md:order-2">
+        <div class="flex justify-center space-x-4 md:order-2">
+          <a
+            href="https://github.com/mskelton/termicons.nvim"
+            class="text-gray-400 hover:text-gray-500"
+          >
+            <span class="sr-only">Neovim plugin</span>
+
+            <svg
+              aria-hidden="true"
+              class="h-6 w-6"
+              fill="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M4 6.29547L8.13333 2V2.02801L15.8382 14.1281L15.7867 2L19.9717 6.33421L20 17.7262L15.8727 22L8.13333 9.87907V21.9726L4 17.7267V6.29547Z"
+              />
+            </svg>
+          </a>
+
           <a
             href="https://github.com/mskelton/termicons"
             class="text-gray-400 hover:text-gray-500"
@@ -150,15 +168,19 @@
               aria-hidden="true"
             >
               <path
-                d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"
+                d="M16.3885 4H18.9953L13.3002 10.7774L20 20H14.7541L10.6454 14.4066L5.94405 20H3.3357L9.42711 12.7508L3 4H8.37904L12.093 9.11262L16.3885 4ZM15.4736 18.3754H16.918L7.59417 5.53928H6.04413L15.4736 18.3754Z"
               />
             </svg>
           </a>
         </div>
 
         <div class="mt-8 md:order-1 md:mt-0">
-          <p class="text-center text-xs leading-5 text-gray-500">
-            &copy; 2023 Mark Skelton. All rights reserved.
+          <p class="text-center text-sm leading-5 text-gray-500">
+            &copy; 2023
+            <a
+              class="text-blue-600 hover:underline"
+              href="https://mskelton.dev"
+            >Mark Skelton</a>. All rights reserved.
           </p>
         </div>
       </div>

@@ -1,6 +1,7 @@
 @font-face {
   font-family: "termicons";
-  src: url("termicons.woff2") format("woff2"),
+  src:
+    url("termicons.woff2") format("woff2"),
     url("termicons.woff") format("woff"),
     url("termicons.ttf") format("truetype");
 }

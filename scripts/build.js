@@ -8,7 +8,7 @@ import overrides from "../src/template/overrides.json" assert { type: "json" }
 // The list of codepoints in the mapping file are not necessarily sorted
 // alphabetically, so we need to post process it.
 const sortedCodepoints = Object.fromEntries(
-  Object.entries(codepoints).sort((a, b) => a[0].localeCompare(b[0]))
+  Object.entries(codepoints).sort((a, b) => a[0].localeCompare(b[0])),
 )
 
 const res = await generateFonts({
@@ -70,7 +70,7 @@ async function updateReadme() {
 
   const updated = original.replace(
     /symbol_map.*/,
-    `symbol_map ${start}-${end} termicons`
+    `symbol_map ${start}-${end} termicons`,
   )
 
   await fs.writeFile(url, updated)
@@ -80,7 +80,7 @@ async function updateReadme() {
 async function readMappings() {
   const url = new URL(
     "../material-icons/src/icons/fileIcons.ts",
-    import.meta.url
+    import.meta.url,
   )
 
   // The vscode extension is written in TypeScript, so we have to do some

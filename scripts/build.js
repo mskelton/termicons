@@ -148,7 +148,7 @@ async function copyFont() {
   const source = new URL("../dist/termicons.ttf", import.meta.url)
   const dest = new URL(`file://${os.homedir()}/Library/Fonts/termicons.ttf`)
 
-  await Bun.write(source, dest)
+  await Bun.write(dest, Bun.file(source))
 }
 
 await updateJSON()

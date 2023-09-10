@@ -1,4 +1,3 @@
-import fs from "node:fs/promises"
 import os from "node:os"
 import { generateFonts } from "fantasticon"
 import manifest from "../package.json" assert { type: "json" }
@@ -44,7 +43,8 @@ function hexFormat(value) {
 }
 
 async function inferColor(key) {
-  const content = await fs.readFile(`./src/icons/${key}.svg`, "utf-8")
+  const file = Bun.file(`./src/icons/${key}.svg`)
+  const content = await file.text()
   const match = content.match(/fill="(#[a-f\d]{3,6})/i)
   const value = match?.[1] ?? "#ffffff"
 
@@ -62,7 +62,8 @@ function formatCodepoint(key) {
 // Update the codepoint range in the readme
 async function updateReadme() {
   const url = new URL("../README.md", import.meta.url)
-  const original = await fs.readFile(url, "utf-8")
+  const file = Bun.file(url)
+  const original = await file.text()
 
   const keys = Object.keys(codepoints)
   const start = formatCodepoint(keys[0])
@@ -73,7 +74,7 @@ async function updateReadme() {
     `symbol_map ${start}-${end} termicons`,
   )
 
-  await fs.writeFile(url, updated)
+  await Bun.write(file, updated)
 }
 
 // Read the mappings from the vscode extension to automatically get their matches
@@ -85,7 +86,7 @@ async function readMappings() {
 
   // The vscode extension is written in TypeScript, so we have to do some
   // transformation to properly read it.
-  const content = (await fs.readFile(url, "utf-8"))
+  const content = (await Bun.file(url).text())
     .replace("export const fileIcons", "global.fileIcons")
     .replace(/import.*/g, "")
     .replace(": FileIcons", "")
@@ -139,7 +140,7 @@ async function updateJSON() {
 
   // Write the mappings to the output JSON file
   const jsonURL = new URL("../dist/termicons.json", import.meta.url)
-  await fs.writeFile(jsonURL, JSON.stringify(sortedMappings, null, 2))
+  await Bun.write(jsonURL, JSON.stringify(sortedMappings, null, 2))
 }
 
 // Copy the font to the user's font directory
@@ -147,7 +148,7 @@ async function copyFont() {
   const source = new URL("../dist/termicons.ttf", import.meta.url)
   const dest = new URL(`file://${os.homedir()}/Library/Fonts/termicons.ttf`)
 
-  await fs.copyFile(source, dest)
+  await Bun.write(source, dest)
 }
 
 await updateJSON()

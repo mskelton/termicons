@@ -1,8 +1,8 @@
 import os from "node:os"
 import { generateFonts } from "fantasticon"
-import manifest from "../package.json" assert { type: "json" }
-import codepoints from "../src/template/mapping.json" assert { type: "json" }
-import overrides from "../src/template/overrides.json" assert { type: "json" }
+import { description, fontVersion, homepage } from "../package.json"
+import codepoints from "../src/template/mapping.json"
+import overrides from "../src/template/overrides.json"
 
 // The list of codepoints in the mapping file are not necessarily sorted
 // alphabetically, so we need to post process it.
@@ -29,9 +29,9 @@ const res = await generateFonts({
   },
   formatOptions: {
     ttf: {
-      url: manifest.url,
-      description: manifest.description,
-      version: manifest.fontVersion,
+      url: homepage,
+      description,
+      version: fontVersion,
     },
   },
 })

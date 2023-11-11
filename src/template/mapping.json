@@ -431,5 +431,8 @@
   "biome": 53677,
   "esbuild": 53678,
   "templ": 53679,
-  "stan": 53680
+  "stan": 53680,
+  "abap": 53681,
+  "taskfile": 53682,
+  "lottie": 53683
 }

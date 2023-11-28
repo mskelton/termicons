@@ -436,5 +436,7 @@
   "taskfile": 53682,
   "lottie": 53683,
   "apps-script": 53684,
-  "hjson": 53685
+  "hjson": 53685,
+  "chrome": 53686,
+  "puppeteer": 53687
 }

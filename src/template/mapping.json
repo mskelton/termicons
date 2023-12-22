@@ -438,5 +438,6 @@
   "apps-script": 53684,
   "hjson": 53685,
   "chrome": 53686,
-  "puppeteer": 53687
+  "puppeteer": 53687,
+  "rspec": 53688
 }

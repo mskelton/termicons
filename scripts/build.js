@@ -1,8 +1,9 @@
 import os from "node:os"
+import fs from "node:fs/promises"
 import { generateFonts } from "fantasticon"
-import { description, fontVersion, homepage } from "../package.json"
-import codepoints from "../src/template/mapping.json"
-import overrides from "../src/template/overrides.json"
+import manifest from "../package.json" assert { type: "json" }
+import codepoints from "../src/template/mapping.json" assert { type: "json" }
+import overrides from "../src/template/overrides.json" assert { type: "json" }
 
 // The list of codepoints in the mapping file are not necessarily sorted
 // alphabetically, so we need to post process it.
@@ -29,9 +30,9 @@ const res = await generateFonts({
   },
   formatOptions: {
     ttf: {
-      url: homepage,
-      description,
-      version: fontVersion,
+      url: manifest.homepage,
+      description: manifest.description,
+      version: manifest.fontVersion,
     },
   },
 })
@@ -43,8 +44,7 @@ function hexFormat(value) {
 }
 
 async function inferColor(key) {
-  const file = Bun.file(`./src/icons/${key}.svg`)
-  const content = await file.text()
+  const content = await fs.readFile(`./src/icons/${key}.svg`, "utf-8")
   const match = content.match(/fill="(#[a-f\d]{3,6})/i)
   const value = match?.[1] ?? "#ffffff"
 
@@ -62,8 +62,7 @@ function formatCodepoint(key) {
 // Update the codepoint range in the readme
 async function updateReadme() {
   const url = new URL("../README.md", import.meta.url)
-  const file = Bun.file(url)
-  const original = await file.text()
+  const original = await fs.readFile(url, "utf-8")
 
   const keys = Object.keys(codepoints)
   const start = formatCodepoint(keys[0])
@@ -74,7 +73,7 @@ async function updateReadme() {
     `symbol_map ${start}-${end} termicons`,
   )
 
-  await Bun.write(file, updated)
+  await fs.writeFile(url, updated)
 }
 
 // Read the mappings from the vscode extension to automatically get their matches
@@ -86,7 +85,7 @@ async function readMappings() {
 
   // The vscode extension is written in TypeScript, so we have to do some
   // transformation to properly read it.
-  const content = (await Bun.file(url).text())
+  const content = (await fs.readFile(url, "utf-8"))
     .replace("export const fileIcons", "global.fileIcons")
     .replace(/import.*/g, "")
     .replace(": FileIcons", "")
@@ -140,7 +139,7 @@ async function updateJSON() {
 
   // Write the mappings to the output JSON file
   const jsonURL = new URL("../dist/termicons.json", import.meta.url)
-  await Bun.write(jsonURL, JSON.stringify(sortedMappings, null, 2))
+  await fs.writeFile(jsonURL, JSON.stringify(sortedMappings, null, 2))
 }
 
 // Copy the font to the user's font directory
@@ -148,7 +147,7 @@ async function copyFont() {
   const source = new URL("../dist/termicons.ttf", import.meta.url)
   const dest = new URL(`file://${os.homedir()}/Library/Fonts/termicons.ttf`)
 
-  await Bun.write(dest, Bun.file(source))
+  await fs.copyFile(source, dest)
 }
 
 await updateJSON()

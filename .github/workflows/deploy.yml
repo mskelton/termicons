@@ -25,16 +25,21 @@ jobs:
           submodules: true
       - name: Setup Pages
         uses: actions/configure-pages@v3
-      - name: Setup Bun
-        uses: oven-sh/setup-bun@v1
+      - name: Setup pnpm
+        uses: pnpm/action-setup@v2
         with:
-          version: latest
+          version: "7"
+      - name: Setup Node
+        uses: actions/setup-node@v3
+        with:
+          node-version: 18.x
+          cache: pnpm
       - name: Install dependencies
-        run: bun install
+        run: pnpm install
       - name: Build font
-        run: bun run build
+        run: pnpm build
       - name: Generate CSS
-        run: bun css
+        run: pnpm css
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v1
         with:

@@ -5,8 +5,8 @@
   "homepage": "https://mskelton.dev/termicons",
   "type": "module",
   "scripts": {
-    "build": "bun ./scripts/build.js",
-    "dev": "nodemon -e js,svg,hbs,json -i dist/ --exec bun ./scripts/build.js --dev",
+    "build": "node ./scripts/build.js",
+    "dev": "nodemon -e js,svg,hbs,json -i dist/ --exec node ./scripts/build.js --dev",
     "css": "tailwindcss -i ./src/template/styles.css -o ./dist/termicons.css",
     "format": "prettier --write '**/*.{js,svg,hbs,yml,md,cjs,json,css}'"
   },
@@ -16,8 +16,6 @@
     "tailwindcss": "^3.3.3"
   },
   "devDependencies": {
-    "@types/bun": "^1.0.0",
-    "bun-types": "^1.0.21",
     "nodemon": "^3.0.1",
     "prettier": "^3.0.2"
   }

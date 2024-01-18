@@ -10,7 +10,8 @@ system font manager.
 
 ### Kitty
 
-To setup termicons with [Kitty], add the following to your `kitty.conf` file.
+To setup termicons with [Kitty](https://sw.kovidgoyal.net/kitty), add the
+following to your `kitty.conf` file.
 
 ```kitty
 symbol_map U+D000-U+D1BB termicons

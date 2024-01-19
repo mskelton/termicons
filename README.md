@@ -21,6 +21,13 @@ _Note: As new icons are added, the end codepoint will change, so ensure you
 check the README when updating to the latest version to ensure you have the
 latest end codepoint in your Kitty config._
 
+### iTerm
+
+Usage of termicons in iTerm is limited given that iTerm only supports a single
+"non-ASCII" font. If you don't already have a "non-ASCII" font specified in your
+iTerm preferences, set it to "termicons". Sadly, termicons does not support
+patched fonts, so this does not work alongside an existing "non-ASCII" font.
+
 ### Neovim
 
 For an alternative set of icons for

@@ -444,5 +444,12 @@
   "moon": 53690,
   "kubernetes": 53691,
   "huff": 53692,
-  "vedic": 53693
+  "vedic": 53693,
+  "openapi": 53694,
+  "payload": 53695,
+  "pkl": 53696,
+  "swagger": 53697,
+  "syncpack": 53698,
+  "pdm": 53699,
+  "dll": 53700
 }

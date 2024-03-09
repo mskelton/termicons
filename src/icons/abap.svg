@@ -1,6 +1,9 @@
-<svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
-  <path
-    d="M16.8511 58.425V141.574H100L183.149 58.425H100H16.8511Z"
-    fill="#0288D1"
-  />
+<svg
+  width="32"
+  height="32"
+  viewBox="0 0 32 32"
+  fill="none"
+  xmlns="http://www.w3.org/2000/svg"
+>
+  <path d="M2 10V22H16L30 10" fill="#0288D1" />
 </svg>

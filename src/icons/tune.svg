@@ -1,6 +1,11 @@
-<svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-  <path
-    d="M6.849 2.85101H4.849V8.85101H6.849V2.85101ZM18.849 2.85101H16.849V12.851H18.849V2.85101ZM2.849 12.851H4.849V20.851H6.849V12.851H8.849V10.851H2.849V12.851ZM14.849 6.85101H12.849V2.85101H10.849V6.85101H8.849V8.85101H14.849V6.85101ZM10.849 20.851H12.849V10.851H10.849V20.851ZM14.849 14.851V16.851H16.849V20.851H18.849V16.851H20.849V14.851H14.849Z"
-    fill="#FBC02D"
-  />
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+  <rect x="12" y="10" width="10" height="2" style="fill: #fbc02d"/>
+  <rect x="16" y="4" width="2" height="8" style="fill: #fbc02d"/>
+  <rect x="20" y="22" width="10" height="2" style="fill: #fbc02d"/>
+  <rect x="24" y="24" width="2" height="4" style="fill: #fbc02d"/>
+  <rect x="24" y="4" width="2" height="14" style="fill: #fbc02d"/>
+  <rect x="2" y="18" width="10" height="2" style="fill: #fbc02d"/>
+  <rect x="6" y="18" width="2" height="10" style="fill: #fbc02d"/>
+  <rect x="6" y="4" width="2" height="10" style="fill: #fbc02d"/>
+  <rect x="16" y="16" width="2" height="12" style="fill: #fbc02d"/>
 </svg>

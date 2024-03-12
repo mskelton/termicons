@@ -1,6 +1,3 @@
-<svg viewBox="0 0 300 300" xmlns="http://www.w3.org/2000/svg">
-  <path
-    d="M151.479 30.937V151.477H30.9395V269.057H269.059V30.927L151.479 30.937Z"
-    fill="#4CAF50"
-  />
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+  <polygon points="16 2 16 16 2 16 2 30 30 30 30 2 16 2" style="fill: #4caf50"/>
 </svg>

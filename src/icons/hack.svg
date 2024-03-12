@@ -1,16 +1,9 @@
-<svg viewBox="0 0 254 254" xmlns="http://www.w3.org/2000/svg">
-  <path d="M56.244 231.422V166.749H119.925L56.244 231.422Z" fill="#607D8B" />
-  <path
-    d="M56.246 86.457L122.682 21.563V87.779L56.246 154.215V86.457Z"
-    fill="#607D8B"
-  />
-  <path d="M130.699 151.512V88.16H194.82L130.699 151.512Z" fill="#607D8B" />
-  <path
-    d="M198.898 95.792L130.698 163.661V231.419L198.898 163.44V95.792Z"
-    fill="#607D8B"
-  />
-  <path
-    d="M122.668 160.378L60.638 160.268L122.668 98.57V160.378Z"
-    fill="#607D8B"
-  />
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+  <g>
+    <polygon points="14 9 6 17 6 9 14 1 14 9" style="fill: #607d8b"/>
+    <polygon points="26 21 16 31 16 23 26 13 26 21" style="fill: #607d8b"/>
+    <polyline points="6 20 14 12 14 20" style="fill: #ffa000"/>
+    <polyline points="6 30 14 22 6 22" style="fill: #607d8b"/>
+    <polyline points="16 20 26 10 16 10" style="fill: #eceff1"/>
+  </g>
 </svg>

@@ -1,10 +1,14 @@
-<svg viewBox="0 0 300 300" xmlns="http://www.w3.org/2000/svg">
-  <path d="M261.183 38.825H191.7V108.31H261.183V38.825Z" fill="#FFB300" />
-  <path d="M184.737 38.825H115.253V108.31H184.737V38.825Z" fill="#FFB300" />
-  <path d="M108.304 38.825H38.8199V108.31H108.304V38.825Z" fill="#FFB300" />
-  <path d="M261.188 115.258H191.704V184.742H261.188V115.258Z" fill="#FFB300" />
-  <path d="M184.732 115.258H115.248V184.742H184.732V115.258Z" fill="#FFB300" />
-  <path d="M184.732 191.69H115.248V261.175H184.732V191.69Z" fill="#FFB300" />
-  <path d="M261.179 191.69H191.695V261.175H261.179V191.69Z" fill="#FFB300" />
-  <path d="M108.295 191.69H38.811V261.175H108.295V191.69Z" fill="#FFB300" />
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+  <g>
+    <rect x="2" y="22" width="8" height="8" style="fill: #e0e0e0"/>
+    <rect x="12" y="22" width="8" height="8" style="fill: #e0e0e0"/>
+    <rect x="22" y="22" width="8" height="8" style="fill: #e0e0e0"/>
+    <rect x="12" y="12" width="8" height="8" style="fill: #e0e0e0"/>
+  </g>
+  <g>
+    <rect x="2" y="2" width="8" height="8" style="fill: #ffb300"/>
+    <rect x="12" y="2" width="8" height="8" style="fill: #ffb300"/>
+    <rect x="22" y="2" width="8" height="8" style="fill: #ffb300"/>
+    <rect x="22" y="12" width="8" height="8" style="fill: #ffb300"/>
+  </g>
 </svg>

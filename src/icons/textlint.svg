@@ -1,6 +1,5 @@
-<svg viewBox="0 0 256 256" xmlns="http://www.w3.org/2000/svg">
-  <path
-    d="M35.8514 35.8444V77.0342H35.853V220.147H106.786V220.162H147.973V220.147H220.143V178.96H147.973V77.0342H220.155V35.8444H77.033V35.84L35.8514 35.8444ZM77.033 77.0342H106.786V178.96H77.033V77.0342Z"
-    fill="#00E5FF"
-  />
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+  <polygon points="10 22 10 8 4 8 4 28 28 28 28 22 10 22" style="fill: #f06292;fill-rule: evenodd"/>
+  <rect x="14" y="8" width="4" height="20" style="fill: #00e5ff"/>
+  <rect x="4" y="4" width="24" height="6" style="fill: #00e5ff"/>
 </svg>

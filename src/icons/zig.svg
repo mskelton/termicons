@@ -1,14 +1,11 @@
-<svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-  <path
-    d="M4.40189 17.4252L6.84413 14.7116L4.53757 14.7116V9.28437H6.57277V6.57077H1.82397V17.4252L4.40189 17.4252Z"
-    fill="#F9A825"
-  />
-  <path
-    d="M19.5981 6.57077L17.1558 9.28437L19.4624 9.28437V14.7116H17.4272V17.4252H22.176V6.57077L19.5981 6.57077Z"
-    fill="#F9A825"
-  />
-  <path
-    d="M15.2804 6.57077L19.9047 5.24518L11.381 14.7116H16.7488V17.4252H8.72696L4.08847 18.7548L12.6158 9.28437H7.25117V6.57077H15.2804Z"
-    fill="#F9A825"
-  />
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+  <rect x="2" y="8" width="6" height="4" style="fill: #f9a825"/>
+  <rect x="10" y="8" width="12" height="4" style="fill: #f9a825"/>
+  <rect x="10" y="20" width="12" height="4" style="fill: #f9a825"/>
+  <rect x="24" y="20" width="2" height="4" style="fill: #f9a825"/>
+  <polygon points="8 20 5 24 2 24 2 12 6 12 6 20 8 20" style="fill: #f9a825"/>
+  <polygon points="22 12 16 12 10 20 16 20 22 12" style="fill: #f9a825"/>
+  <polyline points="16 20 10 20 4 28" style="fill: #f9a825"/>
+  <polyline points="16 12 22 12 28 4" style="fill: #f9a825"/>
+  <polygon points="30 8 30 24 26 24 26 12 24 12 27 8 30 8" style="fill: #f9a825"/>
 </svg>

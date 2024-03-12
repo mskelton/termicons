@@ -1,14 +1,10 @@
-<svg viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg">
-  <path
-    d="M184.43 180.6H109.746V364.92H81.9506V180.6H7.26758V155.893H184.428L184.43 180.6Z"
-    fill="#42A5F5"
-  />
-  <path
-    d="M299.519 435.56H161.809V226.53H299.519V251.237H189.599V308.512H299.519V333.219H189.599V410.85H299.519V435.56Z"
-    fill="#42A5F5"
-  />
-  <path
-    d="M492.731 152.17L420.574 255.49L492.589 361.2H460.442L403.447 275.147L345.049 361.2H314.727L387.585 256.76L316.412 152.18H348.419L404.712 237.11L462.268 152.18L492.731 152.17Z"
-    fill="#42A5F5"
-  />
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+  <rect x="2" y="8" width="10" height="2" style="fill: #42a5f5"/>
+  <rect x="6" y="10" width="2" height="10" style="fill: #42a5f5"/>
+  <rect x="12" y="14" width="6" height="2" style="fill: #42a5f5"/>
+  <rect x="12" y="16" width="2" height="12" style="fill: #42a5f5"/>
+  <rect x="13.5" y="26" width="4.5" height="2" style="fill: #42a5f5"/>
+  <rect x="14" y="20" width="4" height="2" style="fill: #42a5f5"/>
+  <polygon points="22 20 20 20 28 8 30 8 22 20" style="fill: #42a5f5"/>
+  <polygon points="27 20 30 20 23 8 20 8 27 20" style="fill: #42a5f5"/>
 </svg>

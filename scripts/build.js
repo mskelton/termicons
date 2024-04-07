@@ -21,7 +21,6 @@ const res = await generateFonts({
   assetTypes: ["json", "html"],
   normalize: true,
   descent: 50,
-  fontsUrl: process.env.NODE_ENV === "production" ? "/termicons/" : "",
   templates: {
     html: "src/template/preview.hbs",
   },

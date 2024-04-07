@@ -2,7 +2,7 @@
   "name": "termicons",
   "description": "Material style icons optimized for terminal rendering",
   "fontVersion": "1.0",
-  "homepage": "https://mskelton.dev/termicons",
+  "homepage": "https://termicons.mskelton.dev",
   "packageManager": "pnpm@8.14.0",
   "type": "module",
   "scripts": {

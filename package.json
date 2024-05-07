@@ -6,8 +6,8 @@
   "packageManager": "pnpm@8.14.0",
   "type": "module",
   "scripts": {
-    "build": "node ./scripts/build.js",
-    "dev": "nodemon -e js,svg,hbs,json -i dist/ --exec node ./scripts/build.js --dev",
+    "build": "bun ./scripts/build.js",
+    "dev": "nodemon -e js,svg,hbs,json -i dist/ --exec bun ./scripts/build.js --dev",
     "css": "tailwindcss -i ./src/template/styles.css -o ./dist/termicons.css",
     "format": "prettier --write '**/*.{js,svg,hbs,yml,md,cjs,json,css}'"
   },

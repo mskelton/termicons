@@ -1,9 +1,9 @@
 import os from "node:os"
 import fs from "node:fs/promises"
 import { generateFonts } from "fantasticon"
-import manifest from "../package.json" assert { type: "json" }
-import codepoints from "../src/template/mapping.json" assert { type: "json" }
-import overrides from "../src/template/overrides.json" assert { type: "json" }
+import manifest from "../package.json" with { type: "json" }
+import codepoints from "../src/template/mapping.json" with { type: "json" }
+import overrides from "../src/template/overrides.json" with { type: "json" }
 
 // The list of codepoints in the mapping file are not necessarily sorted
 // alphabetically, so we need to post process it.
@@ -77,23 +77,8 @@ async function updateReadme() {
 
 // Read the mappings from the vscode extension to automatically get their matches
 async function readMappings() {
-  const url = new URL(
-    "../material-icons/src/icons/fileIcons.ts",
-    import.meta.url,
-  )
-
-  // The vscode extension is written in TypeScript, so we have to do some
-  // transformation to properly read it.
-  const content = (await fs.readFile(url, "utf-8"))
-    .replace("export const fileIcons", "global.fileIcons")
-    .replace(/import.*/g, "")
-    .replace(": FileIcons", "")
-    .replace(/IconPack\.([A-Za-z]+)/g, (_, name) => `"${name.toLowerCase()}"`)
-
-  // This is probably the first time I've ever used eval and felt right about it :)
-  eval(content)
-
-  return fileIcons.icons
+  const mod = await import("../material-icons/src/icons/fileIcons.ts")
+  return mod.fileIcons.icons
 }
 
 const sourceMappings = await readMappings()

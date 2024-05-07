@@ -30,11 +30,15 @@ jobs:
         with:
           version: "8.14.0"
       - name: Setup Node
+        uses: actions/setup-node@v3
+        with:
+          node-version: 18.x
+      - name: Setup Bun
         uses: oven-sh/setup-bun@v1
         with:
           bun-version: 1.1.7
       - name: Install dependencies
-        run: bun install --frozen-lockfile
+        run: bun installk--frozen-lockfile
       - name: Build font
         run: bun run build
       - name: Generate CSS

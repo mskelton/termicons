@@ -38,7 +38,7 @@ jobs:
         with:
           bun-version: 1.1.7
       - name: Install dependencies
-        run: bun installk--frozen-lockfile
+        run: bun install --frozen-lockfile
       - name: Build font
         run: bun run build
       - name: Generate CSS

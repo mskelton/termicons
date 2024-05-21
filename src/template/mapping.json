@@ -454,5 +454,7 @@
   "capnp": 53701,
   "nx": 53702,
   "knip": 53703,
-  "nrwl": 53704
+  "nrwl": 53704,
+  "container": 53705,
+  "snapcraft": 53706
 }

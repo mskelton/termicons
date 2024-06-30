@@ -459,5 +459,8 @@
   "snapcraft": 53706,
   "screwdriver": 53707,
   "bruno": 53708,
-  "harmonix": 53709
+  "harmonix": 53709,
+  "kcl": 53710,
+  "verified": 53711,
+  "amplify": 53712
 }

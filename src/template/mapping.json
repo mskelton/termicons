@@ -463,5 +463,7 @@
   "kcl": 53710,
   "verified": 53711,
   "amplify": 53712,
-  "cairo": 53713
+  "cairo": 53713,
+  "grafana-alloy": 53714,
+  "velite": 53715
 }

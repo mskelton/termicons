@@ -77,7 +77,7 @@ async function updateReadme() {
 
 // Read the mappings from the vscode extension to automatically get their matches
 async function readMappings() {
-  const mod = await import("../material-icons/src/icons/fileIcons.ts")
+  const mod = await import("../material-icons/src/core/icons/fileIcons.ts")
   return mod.fileIcons.icons
 }
 

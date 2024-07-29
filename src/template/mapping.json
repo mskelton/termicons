@@ -465,5 +465,14 @@
   "amplify": 53712,
   "cairo": 53713,
   "grafana-alloy": 53714,
-  "velite": 53715
+  "velite": 53715,
+  "clangd": 53716,
+  "deepsource": 53717,
+  "hurl": 53718,
+  "just": 53719,
+  "liara": 53720,
+  "markdownlint": 53721,
+  "remark": 53722,
+  "slint": 53723,
+  "tsil": 53724
 }

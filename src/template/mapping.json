@@ -478,5 +478,8 @@
   "jsr": 53725,
   "cds": 53726,
   "drizzle": 53727,
-  "coderabbit-ai": 53728
+  "coderabbit-ai": 53728,
+  "github-actions-workflow": 53729,
+  "duc": 53730,
+  "gemini-ai": 53731
 }

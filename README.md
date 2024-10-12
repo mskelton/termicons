@@ -14,7 +14,7 @@ To setup termicons with [Kitty](https://sw.kovidgoyal.net/kitty), add the
 following to your `kitty.conf` file.
 
 ```kitty
-symbol_map U+D000-U+D1EB termicons
+symbol_map U+D000-U+D1ED termicons
 ```
 
 _Note: As new icons are added, the end codepoint will change, so ensure you

@@ -1,14 +1,7 @@
-<svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+<svg viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+  <path d="M4 6V4H12V6H9V13H7V6H4Z" fill="#9C4221" />
   <path
-    d="M3 3H7.11659V5.04459H5.21452V19.4444H7.11659V21.5H3V3Z"
-    fill="#7E7F7F"
-  />
-  <path
-    d="M16.5831 6.89185V9.0351H13.2887V19.0059H10.9701V9.0351H7.65926V6.89185H16.5831Z"
-    fill="#7E7F7F"
-  />
-  <path
-    d="M17.3615 21.5H21.4781V3H17.3615V5.05556H19.2636V19.4554H17.3615V21.5Z"
-    fill="#7E7F7F"
+    d="M4 1V2H2V14H4V15H1V1H4ZM12 1V2H14V14H12V15H15V1H12Z"
+    fill="#9C4221"
   />
 </svg>

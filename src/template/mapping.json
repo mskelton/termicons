@@ -519,5 +519,10 @@
   "markdoc-config": 53766,
   "markdoc": 53767,
   "pm2-ecosystem": 53768,
-  "subtitles": 53769
+  "subtitles": 53769,
+  "beancount": 53770,
+  "phpstan": 53771,
+  "ruff": 53772,
+  "wrangler": 53773,
+  "xmake": 53774
 }

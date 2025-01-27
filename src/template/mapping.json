@@ -524,5 +524,10 @@
   "phpstan": 53771,
   "ruff": 53772,
   "wrangler": 53773,
-  "xmake": 53774
+  "xmake": 53774,
+  "contentlayer": 53775,
+  "epub": 53776,
+  "gnuplot": 53777,
+  "regedit": 53778,
+  "scons": 53779
 }

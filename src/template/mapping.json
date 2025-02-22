@@ -529,5 +529,8 @@
   "epub": 53776,
   "gnuplot": 53777,
   "regedit": 53778,
-  "scons": 53779
+  "scons": 53779,
+  "cline": 53780,
+  "commitizen": 53781,
+  "uv": 53782
 }

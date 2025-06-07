@@ -534,5 +534,17 @@
   "commitizen": 53781,
   "uv": 53782,
   "adobe-illustrator": 53783,
-  "adobe-photoshop": 53784
+  "adobe-photoshop": 53784,
+  "bbx": 53785,
+  "bibliography": 53786,
+  "bibtex-style": 53787,
+  "cbx": 53787,
+  "coloredpetrinets": 53789,
+  "excalidraw": 53790,
+  "hadolint": 53791,
+  "latexmk": 53792,
+  "lbx": 53783,
+  "pytorch": 53784,
+  "snakemake": 53785,
+  "packship": 53786
 }
